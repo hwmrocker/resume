@@ -1,0 +1,96 @@
+Personalien:
+	Name:	Olaf Gladis
+	Geburtstag:	25.05.1985
+	Geburtsort:	München
+	Anschrift:	Lichtenbroicher Weg 68 - 40472 Düsseldorf
+	Telefon: +49 176 964 171 65
+	eMail:	job@gladis.org
+
+
+Praxis Erfahrung:
+	-	timeframe: Juli 2012 - jetzt
+		what: Game Developer
+		company: Pokermania GmbH
+		location: Munich
+		description: Backend Deveopment unserer Pokerplatform.
+		technology:
+			- Python
+			- Websockets
+			- MySQL
+			- Java Script
+			- Less (CSS)
+			- PHP
+
+	-	timeframe: April 2011 - Juni 2012
+		what: Programmierer/Webentwickler
+		company: Personal Novel
+		location: München
+		description: Fullstack Entwicklung 
+		description_list: 
+			- Weiterentwicklung und Wartung des Buchsatzes
+			- Erstellung von PDF und Ebooks
+			- vereinfachung des Bestellprozesses
+		technology:
+			- Python
+			- MySQL
+			- HTML
+			- SASS (CSS)
+			- Java Script
+
+	-	timeframe: Januar 2009 - Dez 2009
+		what: akademischer Mitarbeiter
+		company: Hochschule Ravensburg-Weingarten
+		location: Weingarten
+		description: Betreuung der Elearning Platform und unterstützung der Professoren
+
+	-	timeframe: Oktober 2007 - Mai 2008:
+		what: Diplomarbeit
+		company: Robert BOSCH GmbH
+		location: Hildesheim
+		description: Konzeption und Implementierung einer Busmirrorapplikation für ein zentrales Fahrzeug-Gateway
+		technology:
+			- C
+			- Python
+
+	-	timeframe: März 2007 - September 2007
+		what: Praxissemster
+		company: Robert BOSCH GmbH
+		location: Hildesheim
+		description: Inbetriebnahme eines Nodes und Implementierung der CAN und FlexRay Schnittstelle und eines Softwargateways
+		technology:
+			- C
+
+Ausbildung:
+	-	timeframe: 1991 - 1995
+		what: Grundschule
+		location: Finsing
+
+	-	timeframe: 1995 - 1998
+		what: Hauptschule
+		location: Ampfing
+
+	-	timeframe: 1998 - 2002
+		what: Realschule
+		degree: Mittlere Reife
+		company: Ferdinand Porsche Realschule
+		location: Waldkraiburg
+
+	-	timeframe: 2002 - 2004
+		what: Berufskolleg
+		company: Elektronikschule Tettnang
+		degree: staatl. gepr. Techn. Assistent für Informations- und Kommunikationstechnik
+
+	-	timeframe: 2004 - 2008
+		what: Studium
+		company: Hochschule Ravensburg-Weingarten
+		field: Angewandte Informatik
+		degree: Diplom Informatiker
+
+	-	timeframe: 2008 - 2010
+		what: Studium
+		company: Hochschule Ravensburg-Weingarten
+		degree: Master Informatiker FH
+
+Sprachen:
+	- Deutsch (muttersprachlich)
+	- Englisch (fließend in Sprache und Schrift)
