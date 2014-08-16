@@ -2,7 +2,9 @@ Personalien:
   Name: Olaf Gladis
   Geburtstag: 25.05.1985
   Geburtsort: München
-  Anschrift:  Lichtenbroicher Weg 68 - 40472 Düsseldorf
+  Anschrift:
+    - Lichtenbroicher Weg 68
+    - 40472 Düsseldorf
   Telefon: +49 176 964 171 65
   eMail:  job@gladis.org
 
@@ -12,7 +14,7 @@ Praxis Erfahrung:
     what: Game Developer
     company: Pokermania GmbH
     location: Munich
-    description: Backend Deveopment unserer Pokerplatform.
+    description: Backend Deveopment unserer Pokerplattform.
     technology:
       - Python
       - Websockets
@@ -61,24 +63,10 @@ Praxis Erfahrung:
       - C
 
 Ausbildung:
-  - timeframe: 1991 - 1995
-    what: Grundschule
-    location: Finsing
-
-  - timeframe: 1995 - 1998
-    what: Hauptschule
-    location: Ampfing
-
-  - timeframe: 1998 - 2002
-    what: Realschule
-    degree: Mittlere Reife
-    company: Ferdinand Porsche Realschule
-    location: Waldkraiburg
-
-  - timeframe: 2002 - 2004
-    what: Berufskolleg
-    company: Elektronikschule Tettnang
-    degree: staatl. gepr. Techn. Assistent für Informations- und Kommunikationstechnik
+  - timeframe: 2008 - 2010
+    what: Studium
+    company: Hochschule Ravensburg-Weingarten
+    degree: Master Informatiker FH
 
   - timeframe: 2004 - 2008
     what: Studium
@@ -86,10 +74,24 @@ Ausbildung:
     field: Angewandte Informatik
     degree: Diplom Informatiker
 
-  - timeframe: 2008 - 2010
-    what: Studium
-    company: Hochschule Ravensburg-Weingarten
-    degree: Master Informatiker FH
+  - timeframe: 2002 - 2004
+    what: Berufskolleg
+    company: Elektronikschule Tettnang
+    degree: staatl. gepr. Techn. Assistent für Informations- und Kommunikationstechnik
+
+  - timeframe: 1998 - 2002
+    what: Realschule
+    degree: Mittlere Reife
+    company: Ferdinand Porsche Realschule
+    location: Waldkraiburg
+
+  - timeframe: 1995 - 1998
+    what: Hauptschule
+    location: Ampfing
+
+  - timeframe: 1991 - 1995
+    what: Grundschule
+    location: Finsing
 
 Sprachen:
   - Deutsch (muttersprachlich)
