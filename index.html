@@ -1,20 +1,43 @@
 ---
 layout: default
+title: Resume
 ---
 
-<div class="home">
+<div class="resume">
 
-  <h1>Posts</h1>
+  <header class="post-header">
+    <h1>{{ site.data.resume.Personalien.Name }}</h1>
+  </header>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
+  <header><h2>Praktische Erfahrung</h2></header>
+  <article class="experience">
+  <ul class="resume-list">
+    {% for data in site.data.resume.experience %}
+    <li>
+      <span class="date">{{ data.timeframe }}</span>
+      <span class="jobtitle">{{ data.what }}</span> bei <span class="company"><a href="{{ data.url | default "#"}}">{{ data.company }}</a></span>, <span class="location">{{ data.location }}</span>
+      <span class="description">{{ data.description }}</span>
+    </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+  </article>
+  <header><h2>Ausbildung</h2></header>
+  <article class="education">
+  <ul class="resume-list">
+    {% for data in site.data.resume.education %}
+    {% if data.degree %}
+    <li>
+      <span class="date">{{ data.timeframe }} <span class="degree">{{ data.degree }}</span></span>
+      <span class="company"><a href="{{ data.url | default "#"}}">{{ data.company }}</a></span>, <span class="location">{{ data.location }}</span>
+      <span class="description">{{ data.description }}</span>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  </article>
+
+
 
 </div>
