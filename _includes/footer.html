@@ -59,3 +59,12 @@
   </div>
 
 </footer>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/d3.v3.min.js"></script>
+<script src="/js/d3-timeline.js"></script>
+<script src="/js/timeline.js"></script>
+<script type="text/javascript">
+    var edu = '[{{ site.data.resume.education }}]';
+    var exp = '[{{ site.data.resume.experience }}]';
+    window.generateTimeline(exp, edu);
+</script>

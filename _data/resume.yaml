@@ -41,6 +41,13 @@ experience:
       - SASS (CSS)
       - Java Script
 
+  - timeframe: Januar 2010 - Mai 2010
+    what: Master Thesis
+    company: Tec de Monterrey
+    url: http://www.itesm.mx/wps/wcm/connect/campus/mty/monterrey
+    location: Monterrey
+    description: ...Tagging...
+
   - timeframe: Januar 2009 - Dez 2009
     what: akademischer Mitarbeiter
     company: Hochschule Ravensburg-Weingarten
@@ -68,7 +75,7 @@ experience:
       - C
 
 education:
-  - timeframe: 2008 - 2010
+  - timeframe: 2008 - Dezember 2010
     what: Studium
     company: Hochschule Ravensburg-Weingarten
     url: https://www.hs-weingarten.de/web/masterstudiengang-informatik
@@ -96,11 +103,13 @@ education:
 
   - timeframe: 1995 - 1998
     what: Hauptschule
+    company: Hauptschule Ampfing
     location: Ampfing
 
   - timeframe: 1991 - 1995
     what: Grundschule
-    location: Finsing
+    company: Grundschule Finsing
+    location: "Finsing, Ampfing"
 
 Sprachen:
   - Deutsch (muttersprachlich)
