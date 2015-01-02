@@ -20,6 +20,7 @@ experience:
       - Python
       - Websockets
       - MySQL
+      - Coffee Script
       - Java Script
       - Less (CSS)
       - PHP
@@ -64,6 +65,8 @@ experience:
     technology:
       - C
       - Python
+      - CAN
+      - FlexRay
 
   - timeframe: März 2007 - September 2007
     what: Praxissemester
@@ -73,6 +76,8 @@ experience:
     description: Inbetriebnahme eines Nodes und Implementierung der CAN und FlexRay Schnittstelle und eines Softwaregateways
     technology:
       - C
+      - CAN
+      - FlexRay
 
 education:
   - timeframe: 2008 - Dezember 2010
