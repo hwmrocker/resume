@@ -65,9 +65,11 @@ window.generateTimeline = (exp, edu) ->
     format: d3.time.format("%Y")
     tickTime: d3.time.years
     tickInterval: 5
-    tickSize: 6
-  )
+    tickSize: 2
+  ).click fooclick
   svg = d3.select("#timeline1").append("svg").attr("width", 800).datum(chartData).call(chart)
+
 
 $(document).ready ->
   # alert "foo"
+  $("#timeline1").sticky({topSpacing:0})
