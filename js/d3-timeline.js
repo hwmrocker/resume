@@ -169,12 +169,13 @@
               click(d, index, datum);
             })
             .attr("id", function (d, i) {
-              if (hasId){
-                return "timelineItem_"+datum.id;
+              if ((typeof(d.id) != "undefined")){
+                return "timelineItem_" + d.id;
               }else{
-                return "timelineItem_"+index;
+                return "timelineItem_" + i;
               }
             })
+            .attr("class", "timeline_element")
           ;
 
           g.selectAll("svg").data(data).enter()

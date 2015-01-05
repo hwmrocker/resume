@@ -252,24 +252,6 @@ a
       border-radius: 3px
       code
         background-color: #333
-.resume
-  h2
-    font-size: 150%
-  ul.resume-list
-    li
-      list-style-type: none
-      color: #333
-      margin-bottom: 1em
-      span
-        color: #000
-        &.description
-          display: block
-        &.date
-          @extend ._date
-      &.select
-        background: orange
-        border: 5px solid orange
-
 /* terminal
 
 /* Syntax highlighting styles
@@ -455,3 +437,32 @@ a
 
   .timeline-label
     text-shadow: 1px 0px 2px #FFF
+
+#timelineItem_ehsa, #timelineItem_egsa
+  fill: #7C848A !important
+
+.resume
+  h2
+    font-size: 150%
+  ul.resume-list
+    li
+      list-style-type: none
+      color: #333
+      // margin-bottom: 1em
+      padding: 1em
+      // border: 0px solid white
+      span
+        color: #000
+        &.description
+          display: block
+        &.date
+          @extend ._date
+      &.select
+        background: orange
+        // border: 5px solid orange
+      transition: all 1s linear
+
+.timeline_element
+  &.select
+    fill: orange !important
+  transition: all 0.5s linear

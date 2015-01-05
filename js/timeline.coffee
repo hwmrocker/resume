@@ -48,21 +48,53 @@ getTimeFromExp = (expart) ->
     "id": expart.uid
   }
 
+clear_select = () ->
+  $('ul.resume-list li').removeClass("select")
+  $(".timeline_element").attr("class", "timeline_element")
+
+select = (id) ->
+  $('#frame_' + id).addClass("select")
+  $('#timelineItem_' + id).attr("class", "timeline_element select")
+
 
 fooclick = (d, idx, datum) ->
-  # console.info("d:", d)
-  console.info("idx:" , idx)
-  console.info("datum", datum)
+  if d.id in ["ehsa", "egsa"]
+    return
   element = $('#frame_' + d.id)
-  $('ul.resume-list li').removeClass("select")
-  element.addClass("select")
+  timeline_element = $('#timelineItem_' + d.id)
+  clear_select()
+  select(d.id)
 
-  wh = $(window).height()
-  tlh = $("#timeline1").height()
-  viewport_h = wh - tlh
-  sct = element.offset().top
-  # console.info(sct)
-  $("body, html").animate({scrollTop: (sct - tlh)}, 500)
+  window_height = $(window).height()
+  scroll_top = $(window).scrollTop()
+  timeline_height = $("#timeline1").height()
+  viewport_h = window_height - timeline_height
+
+  element_scroll_top = element.offset().top
+  element_height = element.height()
+
+  scroll_to_top_position = element_scroll_top - timeline_height
+  scroll_to_bottom_position = element_scroll_top - window_height + element_height + 20
+  if scroll_to_top_position  >= scroll_top and scroll_to_bottom_position <= scroll_top
+    # element is completly visible, we do not need to scroll
+    return
+
+  top_scroll_distance = Math.abs(scroll_top - scroll_to_top_position)
+  bottom_scroll_distance = Math.abs(scroll_top - scroll_to_bottom_position)
+
+  if top_scroll_distance < bottom_scroll_distance
+    $("body, html").animate({scrollTop: (scroll_to_top_position)}, 250)
+  else
+    $("body, html").animate({scrollTop: (scroll_to_bottom_position)}, 250)
+
+fooin = () ->
+  $t = $(this)
+  [_, id] = $t.attr("id").split("_")
+  clear_select()
+  select(id)
+
+fooout = () ->
+  clear_select()
 
 window.generateTimeline = (exp, edu) ->
   education = ruby2json edu
@@ -85,10 +117,11 @@ window.generateTimeline = (exp, edu) ->
     tickInterval: 5
     tickSize: 2
   ).click fooclick
+  # .mouseout clear_select
   svg = d3.select("#timeline1").append("svg").attr("width", 800).datum(chartData).call(chart)
 
 
 $(document).ready ->
   # alert "foo"
   $("#timeline1").sticky({topSpacing:0})
-  "haha"
+  $(".resume-list li").hover(fooin, fooout)
