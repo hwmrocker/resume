@@ -68,7 +68,7 @@
 
       // check how many stacks we're gonna need
       // do this here so that we can draw the axis before the graph
-      if (stacked || ending === 0 || beginning === 0) {
+      if (stacked || (ending === 0 && beginning === 0)) {
         g.each(function (d, i) {
           d.forEach(function (datum, index) {
 
@@ -79,22 +79,20 @@
             }
 
             // figure out beginning and ending times if they are unspecified
-            datum.times.forEach(function (time, i) {
-              if(beginning === 0)
+            if (ending === 0 && beginning === 0){
+              datum.times.forEach(function (time, i) {
                 if (time.starting_time < minTime || (minTime === 0 && timeIsRelative === false))
                   minTime = time.starting_time;
-              if(ending === 0)
                 if (time.ending_time > maxTime)
                   maxTime = time.ending_time;
-            });
+              });
+            }
           });
         });
 
-        if (ending === 0) {
-          ending = maxTime;
-        }
-        if (beginning === 0) {
+        if (ending === 0 && beginning === 0) {
           beginning = minTime;
+          ending = maxTime;
         }
       }
 
@@ -169,6 +167,7 @@
               click(d, index, datum);
             })
             .attr("id", function (d, i) {
+              console.info(hasId, d, datum)
               if (hasId){
                 return "timelineItem_"+datum.id;
               }else{
@@ -204,10 +203,7 @@
             gParent.append("text")
               .attr("class", "timeline-label")
               .attr("transform", "translate("+ 0 +","+ (itemHeight * 0.75 + margin.top + (itemHeight + itemMargin) * yAxisMapping[index])+")")
-              .text(hasLabel ? datum.label : datum.id)
-              .on("click", function (d, i) {
-                click(d, index, datum);
-              });
+              .text(hasLabel ? datum.label : datum.id);
           }
 
           if (typeof(datum.icon) !== "undefined") {
@@ -307,19 +303,12 @@
 
       function setWidth() {
         if (!width && !gParentSize.width) {
-          try { 
-            width = gParentItem.attr("width");
-            if (!width) {
-              throw "width of the timeline is not set. As of Firefox 27, timeline().with(x) needs to be explicitly set in order to render";
-            }            
-          } catch (err) {
-            console.log( err );
-          }
+          throw "width of the timeline is not set. As of Firefox 27, timeline().with(x) needs to be explicitly set in order to render";
         } else if (!(width && gParentSize.width)) {
-          try { 
+          if (!width) {
             width = gParentItem.attr("width");
-          } catch (err) {
-            console.log( err );
+          } else {
+            gParentItem.attr("width", width);
           }
         }
         // if both are set, do nothing
