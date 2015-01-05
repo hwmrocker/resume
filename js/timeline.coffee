@@ -50,7 +50,19 @@ getTimeFromExp = (expart) ->
 
 
 fooclick = (d, idx, datum) ->
-  console.info(d, idx, datum)
+  # console.info("d:", d)
+  console.info("idx:" , idx)
+  console.info("datum", datum)
+  element = $('#frame_' + d.id)
+  $('ul.resume-list li').removeClass("select")
+  element.addClass("select")
+
+  wh = $(window).height()
+  tlh = $("#timeline1").height()
+  viewport_h = wh - tlh
+  sct = element.offset().top
+  # console.info(sct)
+  $("body, html").animate({scrollTop: (sct - tlh)}, 500)
 
 window.generateTimeline = (exp, edu) ->
   education = ruby2json edu
@@ -79,3 +91,4 @@ window.generateTimeline = (exp, edu) ->
 $(document).ready ->
   # alert "foo"
   $("#timeline1").sticky({topSpacing:0})
+  "haha"

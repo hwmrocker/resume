@@ -167,7 +167,7 @@
               click(d, index, datum);
             })
             .attr("id", function (d, i) {
-              console.info(hasId, d, datum)
+              // console.info(hasId, d, datum)
               if (hasId){
                 return "timelineItem_"+datum.id;
               }else{
