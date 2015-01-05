@@ -39,25 +39,31 @@ ruby2json = (rubystring) ->
   tmp = tmp.replace /[=]>/g, ": "
   JSON.parse(tmp)
 
-getTimeFromEdu = (edupart) ->
-  tmp = getTimeSpan edupart.timeframe
+getTimeFromExp = (expart) ->
+  tmp = getTimeSpan expart.timeframe
+  end_date = new Date(tmp[1].getFullYear(), tmp[1].getMonth() + 1, 0)
   {
     "starting_time": Date.parse tmp[0]
-    "ending_time": Date.parse tmp[1]
-    # "label": edupart.what
+    "ending_time": Date.parse end_date
+    "id": expart.uid
   }
+
+
+fooclick = (d, idx, datum) ->
+  console.info(d, idx, datum)
 
 window.generateTimeline = (exp, edu) ->
   education = ruby2json edu
   experience = ruby2json exp
+
   chartData = [
     {
       label: "Ausbildung"
-      times: (getTimeFromEdu edupart for edupart in education)
+      times: (getTimeFromExp edupart for edupart in education)
     }
     {
       label: "Erfahrung"
-      times: (getTimeFromEdu expart for expart in experience)
+      times: (getTimeFromExp expart for expart in experience)
     }
   ]
   # alert JSON.stringify chartData

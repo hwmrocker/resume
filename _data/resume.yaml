@@ -11,6 +11,7 @@ Personalien:
 
 experience:
   - timeframe: Juli 2012 - jetzt
+    uid: xpm
     what: Game Developer
     company: Pokermania GmbH
     url: http://pokermania.org/
@@ -26,6 +27,7 @@ experience:
       - PHP
 
   - timeframe: April 2011 - Juni 2012
+    uid: xpn
     what: Programmierer/Webentwickler
     company: Personal Novel
     url: http://www.personalnovel.de/
@@ -43,6 +45,7 @@ experience:
       - Java Script
 
   - timeframe: Januar 2010 - Mai 2010
+    uid: xmty
     what: Master Thesis
     company: Tec de Monterrey
     url: http://www.itesm.mx/wps/wcm/connect/campus/mty/monterrey
@@ -50,6 +53,7 @@ experience:
     description: ...Tagging...
 
   - timeframe: Januar 2009 - Dezember 2009
+    uid: xmdl
     what: akademischer Mitarbeiter
     company: Hochschule Ravensburg-Weingarten
     url: https://www.hs-weingarten.de/web/rechenzentrum/e-learning
@@ -57,6 +61,7 @@ experience:
     description: Betreuung der E-Learning Plattform und Unterstützung der Professoren
 
   - timeframe: Oktober 2007 - Mai 2008
+    uid: xdpl
     what: Diplomarbeit
     company: Robert BOSCH GmbH
     url: http://www.bosch.de/de/de/our_company_1/locations_1/locations-detail_2944.html
@@ -69,6 +74,7 @@ experience:
       - FlexRay
 
   - timeframe: März 2007 - September 2007
+    uid: xpsm
     what: Praxissemester
     company: Robert BOSCH GmbH
     url: http://www.bosch.de/de/de/our_company_1/locations_1/locations-detail_2944.html
@@ -80,38 +86,44 @@ experience:
       - FlexRay
 
 education:
-  - timeframe: 2008 - Dezember 2010
+  - timeframe: Oktober 2008 - Dezember 2010
+    uid: emst
     what: Studium
     company: Hochschule Ravensburg-Weingarten
     url: https://www.hs-weingarten.de/web/masterstudiengang-informatik
     degree: Master Informatik
 
-  - timeframe: 2004 - 2008
+  - timeframe: Oktober 2004 - September 2008
+    uid: edpl
     what: Studium
     company: Hochschule Ravensburg-Weingarten
     url: https://www.hs-weingarten.de/web/bachelorstudiengang-angewandte-informatik
     field: Angewandte Informatik
     degree: Diplom Informatik
 
-  - timeframe: 2002 - 2004
+  - timeframe: September 2002 - August 2004
+    uid: ebk
     what: Berufskolleg
     company: Elektronikschule Tettnang
     url: http://elektronikschule.de/index.php/berufskollegs/berufskollegs-zweijaehrig/bk-informationstechnik
     degree: staatl. gepr. Techn. Assistent für Informations- und Kommunikationstechnik
 
-  - timeframe: 1998 - 2002
+  - timeframe: September 1998 - August 2002
+    uid: ereal
     what: Realschule
     degree: Mittlere Reife
     company: Ferdinand Porsche Realschule
     url: http://www.realschule-waldkraiburg.de/
     location: Waldkraiburg
 
-  - timeframe: 1995 - 1998
+  - timeframe: September 1995 - August 1998
+    uid: ehsa
     what: Hauptschule
     company: Hauptschule Ampfing
     location: Ampfing
 
-  - timeframe: 1991 - 1995
+  - timeframe: September 1991 - August 1995
+    uid: egsa
     what: Grundschule
     company: Grundschule Finsing
     location: "Finsing, Ampfing"
