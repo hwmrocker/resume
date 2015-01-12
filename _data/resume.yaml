@@ -10,124 +10,190 @@ Personalien:
 
 
 experience:
-  - timeframe: Juli 2012 - jetzt
-    uid: xpm
-    what: Game Developer
-    company: Pokermania GmbH
-    url: http://pokermania.org/
-    location: München
-    description: Backend Development unserer Pokerplattform.
-    technology:
-      - Python
-      - Websockets
-      - MySQL
-      - Coffee Script
-      - Java Script
-      - Less (CSS)
-      - PHP
+  name: Praktische Erfahrung
+  timeframes:
+    - timeframe: Juli 2012 - jetzt
+      uid: xpm
+      what: Game Developer
+      company: Pokermania GmbH
+      url: http://pokermania.org/
+      location: 
+        - name: München
+          osm_link: "https://www.openstreetmap.org/way/89922805#map=18/48.16301/11.58924"
+        - name: Köln
+          osm_link: "https://www.openstreetmap.org/way/262588317#map=18/50.90799/6.96379"
+      description: Backend Development unserer Pokerplattform.
+      technology:
+        - Linux
+        - Python
+        - Websockets
+        - MySQL
+        - Coffee Script
+        - Java Script
+        - Less (CSS)
+        - PHP
 
-  - timeframe: April 2011 - Juni 2012
-    uid: xpn
-    what: Programmierer/Webentwickler
-    company: Personal Novel
-    url: http://www.personalnovel.de/
-    location: München
-    description: Fullstack Entwicklung 
-    description_list: 
-      - Weiterentwicklung und Wartung des Buchsatzes
-      - Erstellung von PDF und Ebooks
-      - vereinfachung des Bestellprozesses
-    technology:
-      - Python
-      - MySQL
-      - HTML
-      - SASS (CSS)
-      - Java Script
+    - timeframe: April 2011 - Juni 2012
+      uid: xpn
+      what: Programmierer/Webentwickler
+      company: Personal Novel
+      url: http://www.personalnovel.de/
+      location:
+        - name: München
+          osm_link: https://www.openstreetmap.org/way/36959861#map=18/48.16242/11.58716
+      description: Fullstack Entwicklung 
+      description_list: 
+        - Weiterentwicklung und Wartung des Buchsatzes
+        - Erstellung von PDF und Ebooks
+        - vereinfachung des Bestellprozesses
+      technology:
+        - Linux
+        - Python
+        - MySQL
+        - HTML
+        - SASS (CSS)
+        - Java Script
 
-  - timeframe: Januar 2010 - Mai 2010
-    uid: xmty
-    what: Master Thesis
-    company: Tec de Monterrey
-    url: http://www.itesm.mx/wps/wcm/connect/campus/mty/monterrey
-    location: Monterrey
-    description: ...Tagging...
+    - timeframe: Januar 2010 - Mai 2010
+      uid: xmty
+      what: Master Thesis
+      company: Tec de Monterrey
+      url: http://www.itesm.mx/wps/wcm/connect/campus/mty/monterrey
+      location:
+        - name: Monterrey
+          osm_link: https://www.openstreetmap.org/way/166125823#map=17/25.65100/-100.28968
+      description: Design and Implementation of a Net-Based and General Tagging System
+      technology:
+        - Python
+        - Django
+        - MySQL
+        - Linux
 
-  - timeframe: Januar 2009 - Dezember 2009
-    uid: xmdl
-    what: akademischer Mitarbeiter
-    company: Hochschule Ravensburg-Weingarten
-    url: https://www.hs-weingarten.de/web/rechenzentrum/e-learning
-    location: Weingarten
-    description: Betreuung der E-Learning Plattform und Unterstützung der Professoren
+    - timeframe: Januar 2009 - Dezember 2009
+      uid: xmdl
+      what: akademischer Mitarbeiter
+      company: Hochschule Ravensburg-Weingarten
+      osm_link: https://www.openstreetmap.org/way/24479992#map=18/47.81388/9.65305
+      url: https://www.hs-weingarten.de/web/rechenzentrum/e-learning
+      location:
+        - name: Weingarten
+          description: Betreuung der E-Learning Plattform und Unterstützung der Professoren
+      technology:
+        - PHP
+        - MySQL
+        - Linux
 
-  - timeframe: Oktober 2007 - Mai 2008
-    uid: xdpl
-    what: Diplomarbeit
-    company: Robert BOSCH GmbH
-    url: http://www.bosch.de/de/de/our_company_1/locations_1/locations-detail_2944.html
-    location: Hildesheim
-    description: Konzeption und Implementierung einer Busmirrorapplikation für ein zentrales Fahrzeug-Gateway
-    technology:
-      - C
-      - Python
-      - CAN
-      - FlexRay
+    - timeframe: Oktober 2007 - Mai 2008
+      uid: xdpl
+      what: Diplomarbeit
+      company: Robert BOSCH GmbH
+      url: http://www.bosch.de/de/de/our_company_1/locations_1/locations-detail_2944.html
+      location:
+        - name: Hildesheim
+          osm_link: https://www.openstreetmap.org/way/102839930#map=16/52.1145/9.8961
+      description: Konzeption und Implementierung einer Busmirrorapplikation für ein zentrales Fahrzeug-Gateway
+      technology:
+        - Linux
+        - C
+        - Python
+        - CAN
+        - FlexRay
 
-  - timeframe: März 2007 - September 2007
-    uid: xpsm
-    what: Praxissemester
-    company: Robert BOSCH GmbH
-    url: http://www.bosch.de/de/de/our_company_1/locations_1/locations-detail_2944.html
-    location: Hildesheim
-    description: Inbetriebnahme eines Nodes und Implementierung der CAN und FlexRay Schnittstelle und eines Softwaregateways
-    technology:
-      - C
-      - CAN
-      - FlexRay
+    - timeframe: März 2007 - September 2007
+      uid: xpsm
+      what: Praxissemester
+      company: Robert BOSCH GmbH
+      url: http://www.bosch.de/de/de/our_company_1/locations_1/locations-detail_2944.html
+      location:
+        - name: Hildesheim
+          osm_link: https://www.openstreetmap.org/way/102839930#map=16/52.1145/9.8961
+      description: Inbetriebnahme eines Nodes und Implementierung der CAN und FlexRay Schnittstelle und eines Softwaregateways
+      technology:
+        - Linux
+        - C
+        - CAN
+        - FlexRay
 
 education:
-  - timeframe: Oktober 2008 - Dezember 2010
-    uid: emst
-    what: Studium
-    company: Hochschule Ravensburg-Weingarten
-    url: https://www.hs-weingarten.de/web/masterstudiengang-informatik
-    degree: Master Informatik
+  name: Ausbildung
+  timeframes:
+    - timeframe: Oktober 2008 - Dezember 2010
+      uid: emst
+      what: Studium
+      company: Hochschule Ravensburg-Weingarten
+      location:
+        - name: Weingarten
+          osm_link: https://www.openstreetmap.org/way/24479992#map=18/47.81388/9.65305
+      url: https://www.hs-weingarten.de/web/masterstudiengang-informatik
+      degree: Master Informatik
+      technology:
+        - Python
+        - Linux
+        - C
+        - Java
 
-  - timeframe: Oktober 2004 - September 2008
-    uid: edpl
-    what: Studium
-    company: Hochschule Ravensburg-Weingarten
-    url: https://www.hs-weingarten.de/web/bachelorstudiengang-angewandte-informatik
-    field: Angewandte Informatik
-    degree: Diplom Informatik
+    - timeframe: Oktober 2004 - September 2008
+      uid: edpl
+      what: Studium
+      company: Hochschule Ravensburg-Weingarten
+      location:
+        - name: Weingarten
+          osm_link: https://www.openstreetmap.org/way/24479992#map=18/47.81388/9.65305
+      url: https://www.hs-weingarten.de/web/bachelorstudiengang-angewandte-informatik
+      field: Angewandte Informatik
+      degree: Diplom Informatik
+      technology:
+        - Linux
+        - HTML
+        - Java
+        - C
+        - C++
 
-  - timeframe: September 2002 - August 2004
-    uid: ebk
-    what: Berufskolleg
-    company: Elektronikschule Tettnang
-    url: http://elektronikschule.de/index.php/berufskollegs/berufskollegs-zweijaehrig/bk-informationstechnik
-    degree: staatl. gepr. Techn. Assistent für Informations- und Kommunikationstechnik
+    - timeframe: September 2002 - August 2004
+      uid: ebk
+      what: Berufskolleg
+      company: Elektronikschule Tettnang
+      location:
+        - name: Tettnang
+          osm_link: https://www.openstreetmap.org/way/40989607#map=18/47.66166/9.59677
+      url: http://elektronikschule.de/index.php/berufskollegs/berufskollegs-zweijaehrig/bk-informationstechnik
+      degree: staatl. gepr. Techn. Assistent für Informations- und Kommunikationstechnik
+      technology:
+        - HTML
+        - Java
+        - Perl
+        - MySQL
+        - C
+        - Assembler
+        - Linux
 
-  - timeframe: September 1998 - August 2002
-    uid: ereal
-    what: Realschule
-    degree: Mittlere Reife
-    company: Ferdinand Porsche Realschule
-    url: http://www.realschule-waldkraiburg.de/
-    location: Waldkraiburg
+    - timeframe: September 1998 - August 2002
+      uid: ereal
+      what: Realschule
+      degree: Mittlere Reife
+      company: Ferdinand Porsche Realschule
+      url: http://www.realschule-waldkraiburg.de/
+      location: 
+        - name: Waldkraiburg
+          osm_link: https://www.openstreetmap.org/way/92712641#map=18/48.20423/12.41375
 
-  - timeframe: September 1995 - August 1998
-    uid: ehsa
-    what: Hauptschule
-    company: Hauptschule Ampfing
-    location: Ampfing
+    - timeframe: September 1995 - August 1998
+      uid: ehsa
+      what: Hauptschule
+      company: Hauptschule Ampfing
+      location: 
+        - name: Ampfing
+          osm_link: https://www.openstreetmap.org/way/227101853#map=18/48.25677/12.41261
 
-  - timeframe: September 1991 - August 1995
-    uid: egsa
-    what: Grundschule
-    company: Grundschule Finsing
-    location: "Finsing, Ampfing"
+    - timeframe: September 1991 - August 1995
+      uid: egsa
+      what: Grundschule
+      company: Grundschule Finsing/Ampfing
+      location: 
+        - name: Finsing
+        - name: Ampfing
+          osm_link: https://www.openstreetmap.org/way/227100976#map=18/48.25770/12.41126
 
-Sprachen:
-  - Deutsch (muttersprachlich)
-  - Englisch (fließend in Sprache und Schrift)
+  Sprachen:
+    - Deutsch (muttersprachlich)
+    - Englisch (fließend in Sprache und Schrift)

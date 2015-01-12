@@ -50,11 +50,13 @@ getTimeFromExp = (expart) ->
 
 clear_select = () ->
   $('ul.resume-list li').removeClass("select")
-  $(".timeline_element").attr("class", "timeline_element")
+  $(".timeline_element").each ()->
+    $(this).attr("class", (w for w in $(this).attr("class").split(" ") when w isnt "select").join(" ") )
 
 select = (id) ->
   $('#frame_' + id).addClass("select")
-  $('#timelineItem_' + id).attr("class", "timeline_element select")
+  timeline_item = $('#timelineItem_' + id)
+  timeline_item.attr("class", timeline_item.attr("class") + " select")
 
 
 fooclick = (d, idx, datum) ->
@@ -110,18 +112,19 @@ window.generateTimeline = (exp, edu) ->
       times: (getTimeFromExp expart for expart in experience)
     }
   ]
-  # alert JSON.stringify chartData
   chart = d3.timeline().width(800).stack(true).tickFormat(
     format: d3.time.format("%Y")
     tickTime: d3.time.years
     tickInterval: 5
     tickSize: 2
   ).click fooclick
-  # .mouseout clear_select
   svg = d3.select("#timeline1").append("svg").attr("width", 800).datum(chartData).call(chart)
 
 
 $(document).ready ->
-  # alert "foo"
   $("#timeline1").sticky({topSpacing:0})
   $(".resume-list li").hover(fooin, fooout)
+  # window.generateTimeline(window.exp, window.edu);
+  $("#timelineItem_ehsa, #timelineItem_egsa").each ()->
+    $(this).attr("class", $(this).attr("class") + " unobtrusive")
+

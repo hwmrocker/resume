@@ -2,7 +2,6 @@
 layout: default
 title: Resume
 ---
-
 <div class="resume">
 
   <header class="post-header">
@@ -10,36 +9,23 @@ title: Resume
   </header>
 
   <div id="timeline1"></div>
-
-  <header><h2>Praktische Erfahrung</h2></header>
-  <article class="experience">
-  <ul class="resume-list">
-    {% for data in site.data.resume.experience %}
-    <li id="frame_{{ data.uid }}">
-      <span class="date">{{ data.timeframe }}</span>
-      <span class="jobtitle">{{ data.what }}</span> bei <span class="company"><a href="{{ data.url | default "#"}}">{{ data.company }}</a></span>, <span class="location">{{ data.location }}</span>
-      <span class="description">{{ data.description }}</span>
-    </li>
-    {% endfor %}
-  </ul>
-
-
-  </article>
-  <header><h2>Ausbildung</h2></header>
-  <article class="education">
-  <ul class="resume-list">
-    {% for data in site.data.resume.education %}
-    {% if data.degree %}
-    <li id="frame_{{ data.uid }}">
-      <span class="date">{{ data.timeframe }} <span class="degree">{{ data.degree }}</span></span>
-      <span class="company"><a href="{{ data.url | default "#"}}">{{ data.company }}</a></span>, <span class="location">{{ data.location }}</span>
-      <span class="description">{{ data.description }}</span>
-    </li>
-    {% endif %}
-    {% endfor %}
-  </ul>
-  </article>
-
-
-
+  {% assign cats = "experience,education" | split: "," %}
+  {% for category in cats %}
+    <header><h2>Praktische Erfahrung</h2></header>
+    <article class="{{ category }}">
+    <ul class="resume-list">
+      {% for data in site.data.resume[category].timeframes %}
+      <li id="frame_{{ data.uid }}">
+        <span class="date">{{ data.timeframe }} <span class="degree">{{ data.degree }}</span></span>
+        {% if category == "experience" %}<span class="jobtitle">{{ data.what }}</span> bei {% endif %}<span class="company"><a href="{{ data.url | default "#"}}">{{ data.company }}</a></span>, 
+        {% for loc in data.location%}
+        <span class="location">
+        {% if loc.osm_link %}<a href="{{ loc.osm_link }}">{% endif osm_link %}{{ loc.name }}{% if loc.osm_link %}</a>{% endif osm_link %}{% unless forloop.last %}, {% endunless %}</span>
+        {% endfor %}
+        <span class="description">{{ data.description }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    </article>
+  {% endfor %}
 </div>

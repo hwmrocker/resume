@@ -65,7 +65,7 @@
 <script src="/js/timeline.js"></script>
 <script src="/js/jquery.sticky.js"></script>
 <script type="text/javascript">
-    var edu = '[{{ site.data.resume.education }}]';
-    var exp = '[{{ site.data.resume.experience }}]';
+    var edu = '[{{ site.data.resume.education.timeframes }}]';
+    var exp = '[{{ site.data.resume.experience.timeframes }}]';
     window.generateTimeline(exp, edu);
 </script>

@@ -438,9 +438,6 @@ a
   .timeline-label
     text-shadow: 1px 0px 2px #FFF
 
-#timelineItem_ehsa, #timelineItem_egsa
-  fill: #7C848A !important
-
 .resume
   h2
     font-size: 150%
@@ -457,12 +454,19 @@ a
           display: block
         &.date
           @extend ._date
+        &.location
+          font-size: 0.8em
+          color: #818181
+          a
+            color: #515151
       &.select
         background: orange
         // border: 5px solid orange
       transition: all 1s linear
 
 .timeline_element
+  &.unobtrusive
+    fill: #7C848A !important
   &.select
     fill: orange !important
   transition: all 0.5s linear
