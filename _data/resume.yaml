@@ -9,6 +9,20 @@ Personalien:
   eMail:  job@gladis.org
 
 
+linux:
+  name: Erfahrung mit Linux
+  timeframes:
+    - timeframe: September 2002 - Januar 2005
+      uid: xpl_basic
+      description: Regelmäßiger Umgang mit Linux, jedoch wurde Windows weiterhin als Hauptbetriebssystem verwendet.
+      short_description: Teilzeit
+      color: "#dda"
+    - timeframe: Januar 2005 - jetzt
+      uid: xpl_fulltime
+      description: Seit diesem Zeitpunkt verwende ich Linux als mein primäres Betriebssytem.
+      short_description: als primäres Betriebssytem
+      color: "#8d6"
+
 experience:
   name: Praktische Erfahrung
   timeframes:
@@ -148,6 +162,7 @@ education:
         - Java
         - C
         - C++
+        - Php
 
     - timeframe: September 2002 - August 2004
       uid: ebk

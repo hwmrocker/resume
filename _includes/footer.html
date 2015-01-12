@@ -67,5 +67,6 @@
 <script type="text/javascript">
     var edu = '[{{ site.data.resume.education.timeframes }}]';
     var exp = '[{{ site.data.resume.experience.timeframes }}]';
-    window.generateTimeline(exp, edu);
+    var linux = '[{{ site.data.resume.linux.timeframes }}]';
+    window.generateTimeline(exp, edu, linux);
 </script>

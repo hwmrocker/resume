@@ -48,6 +48,26 @@ getTimeFromExp = (expart) ->
     "id": expart.uid
   }
 
+getTimeFromLinux = (expart) ->
+  tmp = getTimeSpan expart.timeframe
+  end_date = new Date(tmp[1].getFullYear(), tmp[1].getMonth() + 1, 0)
+  {
+    "starting_time": Date.parse tmp[0]
+    "ending_time": Date.parse end_date
+    "id": expart.uid
+    "label": expart.short_description
+    "color": expart.color
+  }
+
+getTimeFromProgramming = (expart) ->
+  tmp = getTimeSpan expart.timeframe
+  end_date = new Date(tmp[1].getFullYear(), tmp[1].getMonth() + 1, 0)
+  {
+    "starting_time": Date.parse tmp[0]
+    "ending_time": Date.parse end_date
+  }
+
+
 clear_select = () ->
   $('ul.resume-list li').removeClass("select")
   $(".timeline_element").each ()->
@@ -98,9 +118,19 @@ fooin = () ->
 fooout = () ->
   clear_select()
 
-window.generateTimeline = (exp, edu) ->
+programmingTimeframes = (edu, exp) ->
+  # ret = []
+  [
+
+
+
+
+  ]
+
+window.generateTimeline = (exp, edu, linux) ->
   education = ruby2json edu
   experience = ruby2json exp
+  linux = ruby2json linux
 
   chartData = [
     {
@@ -110,6 +140,54 @@ window.generateTimeline = (exp, edu) ->
     {
       label: "Erfahrung"
       times: (getTimeFromExp expart for expart in experience)
+    }
+    {
+      label: "Linux"
+      times: (getTimeFromLinux expart for expart in linux)
+    }
+    {
+      label: "C / C++ Programmierung"
+      times: [
+        {
+          "starting_time": Date.parse(new Date("2002-09-01"))
+          "ending_time": Date.parse(new Date("2007-01-01"))
+        }
+      ]
+    }
+    {
+      label: "Java Programmierung"
+      times: [
+        {
+          "starting_time": Date.parse(new Date("2003-09-01"))
+          "ending_time": Date.parse(new Date("2008-10-01"))
+        }
+      ]
+    }
+    {
+      label: "PHP Programmierung"
+      times: [
+        {
+          "starting_time": Date.parse(new Date("2006-01-01"))
+          "ending_time": Date.parse(new Date("2007-01-01"))
+        }
+        {
+          "starting_time": Date.parse(new Date("2009-01-01"))
+          "ending_time": Date.parse(new Date("2010-01-01"))
+        }
+        {
+          "starting_time": Date.parse(new Date("2014-04-01"))
+          "ending_time": Date.parse(new Date())
+        }
+      ]
+    }
+    {
+      label: "Python Programmierung"
+      times: [
+        {
+          "starting_time": Date.parse(new Date("2007-10-01"))
+          "ending_time": Date.parse(new Date())
+        }
+      ]
     }
   ]
   chart = d3.timeline().width(800).stack(true).tickFormat(
@@ -124,7 +202,6 @@ window.generateTimeline = (exp, edu) ->
 $(document).ready ->
   $("#timeline1").sticky({topSpacing:0})
   $(".resume-list li").hover(fooin, fooout)
-  # window.generateTimeline(window.exp, window.edu);
   $("#timelineItem_ehsa, #timelineItem_egsa").each ()->
     $(this).attr("class", $(this).attr("class") + " unobtrusive")
 
