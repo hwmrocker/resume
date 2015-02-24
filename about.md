@@ -7,11 +7,9 @@ permalink: /about/
 Angaben gemäß § 5 TMG:
 ----------------------
 
-```
 Olaf Gladis <br/>
 Lichtenbroicher Web 68 <br/>
 40472 Düsseldorf <br/>
-```
 
 Kontakt:
 --------
