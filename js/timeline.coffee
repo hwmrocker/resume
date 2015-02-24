@@ -146,6 +146,15 @@ window.generateTimeline = (exp, edu, linux) ->
       times: (getTimeFromLinux expart for expart in linux)
     }
     {
+      label: "Basic Programmierung"
+      times: [
+        {
+          "starting_time": Date.parse(new Date("1997-01-01"))
+          "ending_time": Date.parse(new Date("2001-01-01"))
+        }
+      ]
+    }
+    {
       label: "C / C++ Programmierung"
       times: [
         {
