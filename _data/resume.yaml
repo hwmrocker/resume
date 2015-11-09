@@ -10,33 +10,46 @@ Personalien:
 
 
 linux:
-  name: Erfahrung mit Linux
+  name_de: Erfahrung mit Linux
+  name_en: Experience with Linux
   timeframes:
-    - timeframe: September 2002 - Januar 2005
+    - timeframe_de: September 2002 - Januar 2005
+      timeframe_en: September 2002 - January 2005
       uid: xpl_basic
-      description: Regelmäßiger Umgang mit Linux, jedoch wurde Windows weiterhin als Hauptbetriebssystem verwendet.
-      short_description: Teilzeit
+      description_de: Regelmäßiger Umgang mit Linux, jedoch wurde Windows weiterhin als Hauptbetriebssystem verwendet.
+      description_en: Regular use of Linux, but Windows has been used further as the main operating system.
+      short_description_de: Teilzeit
+      short_description_en: Parttime
       color: "#dda"
-    - timeframe: Januar 2005 - jetzt
+    - timeframe_de: Januar 2005 - jetzt
+      timeframe_en: January 2005 - now
       uid: xpl_fulltime
-      description: Seit diesem Zeitpunkt verwende ich Linux als mein primäres Betriebssytem.
-      short_description: als primäres Betriebssytem
+      description_de: Seit diesem Zeitpunkt verwende ich Linux als mein primäres Betriebssytem.
+      description_en: Since then, I use Linux as my primary operating system.
+      short_description_de: als primäres Betriebssytem
+      short_description_en: primary operating system
       color: "#8d6"
 
 experience:
-  name: Praktische Erfahrung
+  name_de: Praktische Erfahrung
+  name_en: Hands on Experience
   timeframes:
-    - timeframe: Juli 2012 - jetzt
+    - timeframe_de: Juli 2012 - jetzt
+      timeframe_en: July 2012 - now
       uid: xpm
-      what: Game Developer
+      what_de: Game Developer
+      what_en: Game Developer
       company: Pokermania GmbH
       url: http://pokermania.org/
       location: 
-        - name: München
+        - name_de: München
+          name_en: Munich
           osm_link: "https://www.openstreetmap.org/way/89922805#map=18/48.16301/11.58924"
-        - name: Köln
+        - name_de: Köln
+          name_en: Cologne
           osm_link: "https://www.openstreetmap.org/way/262588317#map=18/50.90799/6.96379"
-      description: Backend Development der Pokerplattform.
+      description_de: Backend Development der Pokerplattform.
+      description_en: Backend Development of the Poker Platform.
       technology:
         - Linux
         - Python
@@ -47,19 +60,27 @@ experience:
         - Less (CSS)
         - PHP
 
-    - timeframe: April 2011 - Juni 2012
+    - timeframe_de: April 2011 - Juni 2012
+      timeframe_en: April 2011 - June 2012
       uid: xpn
-      what: Programmierer/Webentwickler
+      what_de: Programmierer/Webentwickler
+      what_en: Programmer/Web Developer
       company: Personal Novel
       url: http://www.personalnovel.de/
       location:
-        - name: München
+        - name_de: München
+          name_en: Munich
           osm_link: https://www.openstreetmap.org/way/36959861#map=18/48.16242/11.58716
-      description: Fullstack Entwicklung 
-      description_list: 
+      description_de: Fullstack Entwicklung 
+      description_en: Fullstack Development 
+      description_list_de: 
         - Weiterentwicklung und Wartung des Buchsatzes
         - Erstellung von PDF und Ebooks
-        - vereinfachung des Bestellprozesses
+        - Vereinfachung des Bestellprozesses
+      description_list_en: 
+        - Development and maintenance of the type setting.
+        - Creation of PDF and eBooks.
+        - Simplifying the ordering process.
       technology:
         - Linux
         - Python
@@ -68,44 +89,56 @@ experience:
         - SASS (CSS)
         - Java Script
 
-    - timeframe: Januar 2010 - Mai 2010
+    - timeframe_de: Januar 2010 - Mai 2010
+      timeframe_en: January 2010 - May 2010
       uid: xmty
-      what: Master Thesis
+      what_de: Master Thesis
+      what_en: Master Thesis
       company: Tec de Monterrey
       url: http://www.itesm.mx/wps/wcm/connect/campus/mty/monterrey
       location:
-        - name: Monterrey
+        - name_de: Monterrey
+          name_en: Monterrey
           osm_link: https://www.openstreetmap.org/way/166125823#map=17/25.65100/-100.28968
-      description: Design and Implementation of a Net-Based and General Tagging System
+      description_de: Design and Implementation of a Net-Based and General Tagging System
+      description_en: Design and Implementation of a Net-Based and General Tagging System
       technology:
         - Python
         - Django
         - MySQL
         - Linux
 
-    - timeframe: Januar 2009 - Dezember 2009
+    - timeframe_de: Januar 2009 - Dezember 2009
+      timeframe_en: January 2009 - December 2009
       uid: xmdl
-      what: akademischer Mitarbeiter
+      what_de: Akademischer Mitarbeiter
+      what_en: Academic Staff
       company: Hochschule Ravensburg-Weingarten
       osm_link: https://www.openstreetmap.org/way/24479992#map=18/47.81388/9.65305
       url: https://www.hs-weingarten.de/web/rechenzentrum/e-learning
       location:
-        - name: Weingarten
-          description: Betreuung der E-Learning Plattform und Unterstützung der Professoren
+        - name_de: Weingarten
+          name_en: Weingarten
+          description_de: Betreuung der E-Learning Plattform und Unterstützung der Professoren
+          description_en: Maintenance of the E-Learning Plattform Moodle and support of professors and other teachers
       technology:
         - PHP
         - MySQL
         - Linux
 
-    - timeframe: Oktober 2007 - Mai 2008
+    - timeframe_de: Oktober 2007 - Mai 2008
+      timeframe_en: October 2007 - May 2008
       uid: xdpl
-      what: Diplomarbeit
+      what_de: Diplomarbeit
+      what_en: Diplom Thesis
       company: Robert BOSCH GmbH
       url: http://www.bosch.de/de/de/our_company_1/locations_1/locations-detail_2944.html
       location:
-        - name: Hildesheim
+        - name_de: Hildesheim
+          name_en: Hildesheim
           osm_link: https://www.openstreetmap.org/way/102839930#map=16/52.1145/9.8961
-      description: Konzeption und Implementierung einer Busmirrorapplikation für ein zentrales Fahrzeug-Gateway
+      description_de: Konzeption und Implementierung einer Busmirrorapplikation für ein zentrales Fahrzeug-Gateway
+      description_en: Konzeption und Implementierung einer Busmirrorapplikation für ein zentrales Fahrzeug-Gateway
       technology:
         - Linux
         - C
@@ -113,15 +146,19 @@ experience:
         - CAN
         - FlexRay
 
-    - timeframe: März 2007 - September 2007
+    - timeframe_de: März 2007 - September 2007
+      timeframe_en: March 2007 - September 2007
       uid: xpsm
-      what: Praxissemester
+      what_de: Praxissemester
+      what_en: Integrated Semester
       company: Robert BOSCH GmbH
       url: http://www.bosch.de/de/de/our_company_1/locations_1/locations-detail_2944.html
       location:
-        - name: Hildesheim
+        - name_de: Hildesheim
+          name_en: Hildesheim
           osm_link: https://www.openstreetmap.org/way/102839930#map=16/52.1145/9.8961
-      description: Inbetriebnahme eines Nodes und Implementierung der CAN und FlexRay Schnittstelle und eines Softwaregateways
+      description_de: Inbetriebnahme eines Nodes und Implementierung der CAN und FlexRay Schnittstelle und eines Softwaregateways
+      description_en: Inbetriebnahme eines Nodes und Implementierung der CAN und FlexRay Schnittstelle und eines Softwaregateways
       technology:
         - Linux
         - C
@@ -129,14 +166,18 @@ experience:
         - FlexRay
 
 education:
-  name: Ausbildung
+  name_de: Ausbildung
+  name_en: Education
   timeframes:
-    - timeframe: Oktober 2008 - Dezember 2010
+    - timeframe_de: Oktober 2008 - Dezember 2010
+      timeframe_en: October 2008 - December 2010
       uid: emst
-      what: Studium
+      what_de: Studium
+      what_en: Studies
       company: Hochschule Ravensburg-Weingarten
       location:
-        - name: Weingarten
+        - name_de: Weingarten
+          name_en: Weingarten
           osm_link: https://www.openstreetmap.org/way/24479992#map=18/47.81388/9.65305
       url: https://www.hs-weingarten.de/web/masterstudiengang-informatik
       degree: Master Informatik
@@ -146,12 +187,15 @@ education:
         - C
         - Java
 
-    - timeframe: Oktober 2004 - September 2008
+    - timeframe_de: Oktober 2004 - September 2008
+      timeframe_en: October 2004 - September 2008
       uid: edpl
-      what: Studium
+      what_de: Studium
+      what_en: Studies
       company: Hochschule Ravensburg-Weingarten
       location:
-        - name: Weingarten
+        - name_de: Weingarten
+          name_en: Weingarten
           osm_link: https://www.openstreetmap.org/way/24479992#map=18/47.81388/9.65305
       url: https://www.hs-weingarten.de/web/bachelorstudiengang-angewandte-informatik
       field: Angewandte Informatik
@@ -164,12 +208,15 @@ education:
         - C++
         - Php
 
-    - timeframe: September 2002 - August 2004
+    - timeframe_de: September 2002 - August 2004
+      timeframe_en: September 2002 - August 2004
       uid: ebk
-      what: Berufskolleg
+      what_de: Berufskolleg
+      what_en: Berufskolleg
       company: Elektronikschule Tettnang
       location:
-        - name: Tettnang
+        - name_de: Tettnang
+          name_en: Tettnang
           osm_link: https://www.openstreetmap.org/way/40989607#map=18/47.66166/9.59677
       url: http://elektronikschule.de/index.php/berufskollegs/berufskollegs-zweijaehrig/bk-informationstechnik
       degree: staatl. gepr. Techn. Assistent für Informations- und Kommunikationstechnik
@@ -182,31 +229,41 @@ education:
         - Assembler
         - Linux
 
-    - timeframe: September 1998 - August 2002
+    - timeframe_de: September 1998 - August 2002
+      timeframe_en: September 1998 - August 2002
       uid: ereal
-      what: Realschule
+      what_de: Realschule
+      what_en: secondary school (Realschule)
       degree: Mittlere Reife
       company: Ferdinand Porsche Realschule
       url: http://www.realschule-waldkraiburg.de/
       location: 
-        - name: Waldkraiburg
+        - name_de: Waldkraiburg
+          name_en: Waldkraiburg
           osm_link: https://www.openstreetmap.org/way/92712641#map=18/48.20423/12.41375
 
-    - timeframe: September 1995 - August 1998
+    - timeframe_de: September 1995 - August 1998
+      timeframe_en: September 1995 - August 1998
       uid: ehsa
-      what: Hauptschule
+      what_de: Hauptschule
+      what_en: Mondern Secondary School
       company: Hauptschule Ampfing
       location: 
-        - name: Ampfing
+        - name_de: Ampfing
+          name_en: Ampfing
           osm_link: https://www.openstreetmap.org/way/227101853#map=18/48.25677/12.41261
 
-    - timeframe: September 1991 - August 1995
+    - timeframe_de: September 1991 - August 1995
+      timeframe_en: September 1991 - August 1995
       uid: egsa
-      what: Grundschule
+      what_de: Grundschule
+      what_en: Primary School
       company: Grundschule Finsing/Ampfing
       location: 
-        - name: Finsing
-        - name: Ampfing
+        - name_de: Finsing
+          name_en: Finsing
+        - name_de: Ampfing
+          name_en: Ampfing
           osm_link: https://www.openstreetmap.org/way/227100976#map=18/48.25770/12.41126
 
   Sprachen:

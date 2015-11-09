@@ -1,6 +1,6 @@
 ---
 ---
-months = ["",
+months_de = ["",
   "Januar",
   "Februar",
   "März",
@@ -15,9 +15,40 @@ months = ["",
   "Dezember"
 ]
 
+months_en = ["",
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+]
+
+months = ["",
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec"
+]
+
+
 parseDate = (datestring) ->
   # could be Just a Year "2012", or Month Year "Januar 2013", or "jetzt"
-  if datestring == "jetzt"
+  if datestring == "jetzt" or datestring == "now"
     return new Date()
   day = "01"
   if " " not in datestring
@@ -25,7 +56,7 @@ parseDate = (datestring) ->
     year = datestring
   else
     tmp = datestring.split(" ")
-    month = "0" + months.indexOf(tmp[0])
+    month = "0" + months_en.indexOf(tmp[0])
     month = month[-2..]
     year = tmp[1]
   d = new Date([year,month,day].join("-"))
@@ -40,7 +71,7 @@ ruby2json = (rubystring) ->
   JSON.parse(tmp)
 
 getTimeFromExp = (expart) ->
-  tmp = getTimeSpan expart.timeframe
+  tmp = getTimeSpan expart.timeframe_en
   end_date = new Date(tmp[1].getFullYear(), tmp[1].getMonth() + 1, 0)
   {
     "starting_time": Date.parse tmp[0]
@@ -49,7 +80,7 @@ getTimeFromExp = (expart) ->
   }
 
 getTimeFromLinux = (expart) ->
-  tmp = getTimeSpan expart.timeframe
+  tmp = getTimeSpan expart.timeframe_en
   end_date = new Date(tmp[1].getFullYear(), tmp[1].getMonth() + 1, 0)
   {
     "starting_time": Date.parse tmp[0]
@@ -134,11 +165,11 @@ window.generateTimeline = (exp, edu, linux) ->
 
   chartData = [
     {
-      label: "Ausbildung"
+      label: "Education"
       times: (getTimeFromExp edupart for edupart in education)
     }
     {
-      label: "Erfahrung"
+      label: "Experience"
       times: (getTimeFromExp expart for expart in experience)
     }
     {
@@ -146,7 +177,7 @@ window.generateTimeline = (exp, edu, linux) ->
       times: (getTimeFromLinux expart for expart in linux)
     }
     {
-      label: "Basic Programmierung"
+      label: "Basic programming"
       times: [
         {
           "starting_time": Date.parse(new Date("1997-01-01"))
@@ -155,7 +186,7 @@ window.generateTimeline = (exp, edu, linux) ->
       ]
     }
     {
-      label: "C / C++ Programmierung"
+      label: "C / C++ programming"
       times: [
         {
           "starting_time": Date.parse(new Date("2002-09-01"))
@@ -164,7 +195,7 @@ window.generateTimeline = (exp, edu, linux) ->
       ]
     }
     {
-      label: "Java Programmierung"
+      label: "Java programming"
       times: [
         {
           "starting_time": Date.parse(new Date("2003-09-01"))
@@ -173,7 +204,7 @@ window.generateTimeline = (exp, edu, linux) ->
       ]
     }
     {
-      label: "PHP Programmierung"
+      label: "PHP programming"
       times: [
         {
           "starting_time": Date.parse(new Date("2006-01-01"))
