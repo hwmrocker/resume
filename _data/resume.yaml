@@ -14,7 +14,7 @@ linux:
   name_en: Experience with Linux
   timeframes:
     - timeframe_de: September 2002 - Januar 2005
-    - timeframe_en: September 2002 - January 2005
+      timeframe_en: September 2002 - January 2005
       uid: xpl_basic
       description_de: Regelmäßiger Umgang mit Linux, jedoch wurde Windows weiterhin als Hauptbetriebssystem verwendet.
       description_en: Regular use of Linux, but Windows has been used further as the main operating system.
@@ -22,7 +22,7 @@ linux:
       short_description_en: Parttime
       color: "#dda"
     - timeframe_de: Januar 2005 - jetzt
-    - timeframe_en: January 2005 - now
+      timeframe_en: January 2005 - now
       uid: xpl_fulltime
       description_de: Seit diesem Zeitpunkt verwende ich Linux als mein primäres Betriebssytem.
       description_en: Since then, I use Linux as my primary operating system.
@@ -35,7 +35,7 @@ experience:
   name_en: Hands on Experience
   timeframes:
     - timeframe_de: Juli 2012 - jetzt
-    - timeframe_en: July 2012 - now
+      timeframe_en: July 2012 - now
       uid: xpm
       what_de: Game Developer
       what_en: Game Developer
@@ -61,7 +61,7 @@ experience:
         - PHP
 
     - timeframe_de: April 2011 - Juni 2012
-    - timeframe_en: April 2011 - June 2012
+      timeframe_en: April 2011 - June 2012
       uid: xpn
       what_de: Programmierer/Webentwickler
       what_en: Programmer/Web Developer
@@ -90,7 +90,7 @@ experience:
         - Java Script
 
     - timeframe_de: Januar 2010 - Mai 2010
-    - timeframe_en: January 2010 - May 2010
+      timeframe_en: January 2010 - May 2010
       uid: xmty
       what_de: Master Thesis
       what_en: Master Thesis
@@ -109,7 +109,7 @@ experience:
         - Linux
 
     - timeframe_de: Januar 2009 - Dezember 2009
-    - timeframe_en: January 2009 - December 2009
+      timeframe_en: January 2009 - December 2009
       uid: xmdl
       what_de: Akademischer Mitarbeiter
       what_en: Academic Staff
@@ -127,7 +127,7 @@ experience:
         - Linux
 
     - timeframe_de: Oktober 2007 - Mai 2008
-    - timeframe_en: October 2007 - May 2008
+      timeframe_en: October 2007 - May 2008
       uid: xdpl
       what_de: Diplomarbeit
       what_en: Diplom Thesis
@@ -147,7 +147,7 @@ experience:
         - FlexRay
 
     - timeframe_de: März 2007 - September 2007
-    - timeframe_en: March 2007 - September 2007
+      timeframe_en: March 2007 - September 2007
       uid: xpsm
       what_de: Praxissemester
       what_en: Integrated Semester
@@ -170,7 +170,7 @@ education:
   name_en: Ausbildung
   timeframes:
     - timeframe_de: Oktober 2008 - Dezember 2010
-    - timeframe_en: October 2008 - December 2010
+      timeframe_en: October 2008 - December 2010
       uid: emst
       what_de: Studium
       what_en: Studies
@@ -188,7 +188,7 @@ education:
         - Java
 
     - timeframe_de: Oktober 2004 - September 2008
-    - timeframe_en: October 2004 - September 2008
+      timeframe_en: October 2004 - September 2008
       uid: edpl
       what_de: Studium
       what_en: Studies
@@ -209,7 +209,7 @@ education:
         - Php
 
     - timeframe_de: September 2002 - August 2004
-    - timeframe_en: September 2002 - August 2004
+      timeframe_en: September 2002 - August 2004
       uid: ebk
       what_de: Berufskolleg
       what_en: Berufskolleg
@@ -230,7 +230,7 @@ education:
         - Linux
 
     - timeframe_de: September 1998 - August 2002
-    - timeframe_en: September 1998 - August 2002
+      timeframe_en: September 1998 - August 2002
       uid: ereal
       what_de: Realschule
       what_en: secondary school (Realschule)
@@ -243,7 +243,7 @@ education:
           osm_link: https://www.openstreetmap.org/way/92712641#map=18/48.20423/12.41375
 
     - timeframe_de: September 1995 - August 1998
-    - timeframe_en: September 1995 - August 1998
+      timeframe_en: September 1995 - August 1998
       uid: ehsa
       what_de: Hauptschule
       what_en: Mondern Secondary School
@@ -254,7 +254,7 @@ education:
           osm_link: https://www.openstreetmap.org/way/227101853#map=18/48.25677/12.41261
 
     - timeframe_de: September 1991 - August 1995
-    - timeframe_en: September 1991 - August 1995
+      timeframe_en: September 1991 - August 1995
       uid: egsa
       what_de: Grundschule
       what_en: Primary School

@@ -11,20 +11,20 @@ title: Resume
   <div id="timeline1"></div>
   {% assign cats = "experience,education,linux" | split: "," %}
   {% for category in cats %}
-    <header><h2>{{ site.data.resume[category].name }}</h2></header>
+    <header><h2>{{ site.data.resume[category].name_en }}</h2></header>
     <article class="{{ category }}">
     <ul class="resume-list">
       {% for data in site.data.resume[category].timeframes %}
       <li id="frame_{{ data.uid }}">
-        <span class="date">{{ data.timeframe }} <span class="degree">{{ data.degree }}</span></span>
+        <span class="date">{{ data.timeframe_en }} <span class="degree">{{ data.degree }}</span></span>
         {% if data.company %}
-        {% if category == "experience" %}<span class="jobtitle">{{ data.what }}</span> bei {% endif %}<span class="company"><a href="{{ data.url | default "#"}}">{{ data.company }}</a></span>, 
+        {% if category == "experience" %}<span class="jobtitle">{{ data.what_en }}</span> at {% endif %}<span class="company"><a href="{{ data.url | default "#"}}">{{ data.company }}</a></span>, 
         {% for loc in data.location%}
         <span class="location">
-        {% if loc.osm_link %}<a href="{{ loc.osm_link }}">{% endif osm_link %}{{ loc.name }}{% if loc.osm_link %}</a>{% endif osm_link %}{% unless forloop.last %}, {% endunless %}</span>
+        {% if loc.osm_link %}<a href="{{ loc.osm_link }}">{% endif osm_link %}{{ loc.name_en }}{% if loc.osm_link %}</a>{% endif osm_link %}{% unless forloop.last %}, {% endunless %}</span>
         {% endfor %}
         {% endif data.company %}
-        <span class="description">{{ data.description }}</span>
+        <span class="description">{{ data.description_en }}</span>
       </li>
       {% endfor %}
     </ul>

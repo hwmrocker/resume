@@ -56,7 +56,7 @@ parseDate = (datestring) ->
     year = datestring
   else
     tmp = datestring.split(" ")
-    month = "0" + months.indexOf(tmp[0])
+    month = "0" + months_en.indexOf(tmp[0])
     month = month[-2..]
     year = tmp[1]
   d = new Date([year,month,day].join("-"))
@@ -71,7 +71,7 @@ ruby2json = (rubystring) ->
   JSON.parse(tmp)
 
 getTimeFromExp = (expart) ->
-  tmp = getTimeSpan expart.timeframe
+  tmp = getTimeSpan expart.timeframe_en
   end_date = new Date(tmp[1].getFullYear(), tmp[1].getMonth() + 1, 0)
   {
     "starting_time": Date.parse tmp[0]
@@ -80,7 +80,7 @@ getTimeFromExp = (expart) ->
   }
 
 getTimeFromLinux = (expart) ->
-  tmp = getTimeSpan expart.timeframe
+  tmp = getTimeSpan expart.timeframe_en
   end_date = new Date(tmp[1].getFullYear(), tmp[1].getMonth() + 1, 0)
   {
     "starting_time": Date.parse tmp[0]
