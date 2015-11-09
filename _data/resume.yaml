@@ -36,7 +36,7 @@ experience:
           osm_link: "https://www.openstreetmap.org/way/89922805#map=18/48.16301/11.58924"
         - name: Köln
           osm_link: "https://www.openstreetmap.org/way/262588317#map=18/50.90799/6.96379"
-      description: Backend Development unserer Pokerplattform.
+      description: Backend Development der Pokerplattform.
       technology:
         - Linux
         - Python
