@@ -120,7 +120,7 @@ experience:
         - name_de: Weingarten
           name_en: Weingarten
           description_de: Betreuung der E-Learning Plattform und Unterstützung der Professoren
-          description_en: Betreuung der E-Learning Plattform und Unterstützung der Professoren
+          description_en: Maintenance of the E-Learning Plattform Moodle and support of professors and other teachers
       technology:
         - PHP
         - MySQL
@@ -167,7 +167,7 @@ experience:
 
 education:
   name_de: Ausbildung
-  name_en: Ausbildung
+  name_en: Education
   timeframes:
     - timeframe_de: Oktober 2008 - Dezember 2010
       timeframe_en: October 2008 - December 2010

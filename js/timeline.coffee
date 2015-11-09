@@ -165,11 +165,11 @@ window.generateTimeline = (exp, edu, linux) ->
 
   chartData = [
     {
-      label: "Ausbildung"
+      label: "Education"
       times: (getTimeFromExp edupart for edupart in education)
     }
     {
-      label: "Erfahrung"
+      label: "Experience"
       times: (getTimeFromExp expart for expart in experience)
     }
     {
@@ -177,7 +177,7 @@ window.generateTimeline = (exp, edu, linux) ->
       times: (getTimeFromLinux expart for expart in linux)
     }
     {
-      label: "Basic Programmierung"
+      label: "Basic programming"
       times: [
         {
           "starting_time": Date.parse(new Date("1997-01-01"))
@@ -186,7 +186,7 @@ window.generateTimeline = (exp, edu, linux) ->
       ]
     }
     {
-      label: "C / C++ Programmierung"
+      label: "C / C++ programming"
       times: [
         {
           "starting_time": Date.parse(new Date("2002-09-01"))
@@ -195,7 +195,7 @@ window.generateTimeline = (exp, edu, linux) ->
       ]
     }
     {
-      label: "Java Programmierung"
+      label: "Java programming"
       times: [
         {
           "starting_time": Date.parse(new Date("2003-09-01"))
@@ -204,7 +204,7 @@ window.generateTimeline = (exp, edu, linux) ->
       ]
     }
     {
-      label: "PHP Programmierung"
+      label: "PHP programming"
       times: [
         {
           "starting_time": Date.parse(new Date("2006-01-01"))
