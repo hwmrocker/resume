@@ -1,6 +1,6 @@
 ---
 ---
-months = ["",
+months_de = ["",
   "Januar",
   "Februar",
   "März",
@@ -15,9 +15,40 @@ months = ["",
   "Dezember"
 ]
 
+months_en = ["",
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+]
+
+months = ["",
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec"
+]
+
+
 parseDate = (datestring) ->
   # could be Just a Year "2012", or Month Year "Januar 2013", or "jetzt"
-  if datestring == "jetzt"
+  if datestring == "jetzt" or datestring == "now"
     return new Date()
   day = "01"
   if " " not in datestring
