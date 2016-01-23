@@ -114,11 +114,11 @@ experience:
       what_de: Akademischer Mitarbeiter
       what_en: Academic Staff
       company: Hochschule Ravensburg-Weingarten
-      osm_link: https://www.openstreetmap.org/way/24479992#map=18/47.81388/9.65305
       url: https://www.hs-weingarten.de/web/rechenzentrum/e-learning
       location:
         - name_de: Weingarten
           name_en: Weingarten
+          osm_link: https://www.openstreetmap.org/way/24479992#map=18/47.81388/9.65305
           description_de: Betreuung der E-Learning Plattform und Unterstützung der Professoren
           description_en: Maintenance of the E-Learning Plattform Moodle and support of professors and other teachers
       technology:
