@@ -221,7 +221,7 @@ window.generateTimeline = (exp, edu, linux) ->
       ]
     }
     {
-      label: "Python Programmierung"
+      label: "Python programming"
       times: [
         {
           "starting_time": Date.parse(new Date("2007-10-01"))
