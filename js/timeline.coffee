@@ -111,8 +111,7 @@ select = (id) ->
 
 
 fooclick = (d, idx, datum) ->
-  if d.id in ["ehsa", "egsa"]
-    return
+
   element = $('#frame_' + d.id)
   timeline_element = $('#timelineItem_' + d.id)
   clear_select()
