@@ -13,14 +13,6 @@ linux:
   name_de: Erfahrung mit Linux
   name_en: Experience with Linux
   timeframes:
-    - timeframe_de: September 2002 - Januar 2005
-      timeframe_en: September 2002 - January 2005
-      uid: xpl_basic
-      description_de: Regelmäßiger Umgang mit Linux, jedoch wurde Windows weiterhin als Hauptbetriebssystem verwendet.
-      description_en: Regular use of Linux, but Windows has been used further as the main operating system.
-      short_description_de: Teilzeit
-      short_description_en: Parttime
-      color: "#dda"
     - timeframe_de: Januar 2005 - jetzt
       timeframe_en: January 2005 - now
       uid: xpl_fulltime
@@ -29,6 +21,14 @@ linux:
       short_description_de: als primäres Betriebssytem
       short_description_en: primary operating system
       color: "#8d6"
+    - timeframe_de: September 2002 - Januar 2005
+      timeframe_en: September 2002 - January 2005
+      uid: xpl_basic
+      description_de: Regelmäßiger Umgang mit Linux, jedoch wurde Windows weiterhin als Hauptbetriebssystem verwendet.
+      description_en: Regular use of Linux, but Windows has been used further as the main operating system.
+      short_description_de: Teilzeit
+      short_description_en: Parttime
+      color: "#dda"
 
 experience:
   name_de: Praktische Erfahrung
