@@ -97,8 +97,8 @@ experience:
       company: Tec de Monterrey
       url: http://www.itesm.mx/wps/wcm/connect/campus/mty/monterrey
       location:
-        - name_de: Monterrey
-          name_en: Monterrey
+        - name_de: Monterrey (Mexiko)
+          name_en: Monterrey (Mexico)
           osm_link: https://www.openstreetmap.org/way/166125823#map=17/25.65100/-100.28968
       description_de: Design and Implementation of a Net-Based and General Tagging System
       description_en: Design and Implementation of a Net-Based and General Tagging System
