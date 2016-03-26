@@ -34,8 +34,30 @@ experience:
   name_de: Praktische Erfahrung
   name_en: Hands on Experience
   timeframes:
-    - timeframe_de: Juli 2012 - jetzt
-      timeframe_en: July 2012 - now
+    - timeframe_de: März 2016 - jetzt
+      timeframe_en: March 2016 - now
+      uid: xkaasa
+      what_de: Programmierer
+      what_en: Developer
+      company: Kaasa Home Automation GmbH
+      url: http://kaasahome.com/home/
+      location:
+        - name_de: Düsseldorf
+          name_en: Düsseldorf
+          osm_link: "https://www.openstreetmap.org/way/45726025"
+      description_de: Entwicklung einer Cordova App für die Hausautomation.
+      description_en: Development of a Cordova App for home automation.
+      technology:
+        - Linux
+        - Java Script
+        - Coffee Script
+        - Jade
+        - Stylus (CSS)
+        - Gulp
+        - Websockets
+        - Python
+    - timeframe_de: Juli 2012 - Februar 2016
+      timeframe_en: July 2012 - February 2016
       uid: xpm
       what_de: Game Developer
       what_en: Game Developer
