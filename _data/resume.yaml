@@ -34,8 +34,24 @@ experience:
   name_de: Praktische Erfahrung
   name_en: Hands on Experience
   timeframes:
-    - timeframe_de: März 2016 - jetzt
-      timeframe_en: March 2016 - now
+    - timeframe_de: Juli 2016 - jetzt
+      timeframe_en: July 2016 - now
+      uid: xtrivago
+      what_de: Release Engineer
+      what_en: Release Engineer
+      company: trivago GmbH
+      url: http://company.trivago.de/
+      location:
+        - name_de: Düsseldorf
+          name_en: Düsseldorf
+          osm_link: "https://www.openstreetmap.org/way/24659294"
+      description_de: t.b.a.
+      description_en: t.b.a.
+      technology:
+        - Linux
+        - Python
+    - timeframe_de: März 2016 - Juni 2016
+      timeframe_en: March 2016 - June 2016
       uid: xkaasa
       what_de: Programmierer
       what_en: Developer
