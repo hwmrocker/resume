@@ -45,11 +45,12 @@ experience:
         - name_de: Düsseldorf
           name_en: Düsseldorf
           osm_link: "https://www.openstreetmap.org/way/24659294"
-      description_de: t.b.a.
-      description_en: t.b.a.
+      description_de: Verbesserung des Release Prozesses und Dezimirung der Legacy Bash Release.
+      description_en: Improving the release process and getting rid of legacy bash releases.
       technology:
         - Linux
         - Python
+        - Go
     - timeframe_de: März 2016 - Juni 2016
       timeframe_en: March 2016 - June 2016
       uid: xkaasa
@@ -79,7 +80,7 @@ experience:
       what_en: Game Developer
       company: Pokermania GmbH
       url: http://pokermania.org/
-      location: 
+      location:
         - name_de: München
           name_en: Munich
           osm_link: "https://www.openstreetmap.org/way/89922805#map=18/48.16301/11.58924"
@@ -109,13 +110,13 @@ experience:
         - name_de: München
           name_en: Munich
           osm_link: https://www.openstreetmap.org/way/36959861#map=18/48.16242/11.58716
-      description_de: Fullstack Entwicklung 
-      description_en: Fullstack Development 
-      description_list_de: 
+      description_de: Fullstack Entwicklung
+      description_en: Fullstack Development
+      description_list_de:
         - Weiterentwicklung und Wartung des Buchsatzes
         - Erstellung von PDF und Ebooks
         - Vereinfachung des Bestellprozesses
-      description_list_en: 
+      description_list_en:
         - Development and maintenance of the type setting.
         - Creation of PDF and eBooks.
         - Simplifying the ordering process.
@@ -275,7 +276,7 @@ education:
       degree: Mittlere Reife
       company: Ferdinand Porsche Realschule
       url: http://www.realschule-waldkraiburg.de/
-      location: 
+      location:
         - name_de: Waldkraiburg
           name_en: Waldkraiburg
           osm_link: https://www.openstreetmap.org/way/92712641#map=18/48.20423/12.41375
@@ -286,7 +287,7 @@ education:
       what_de: Hauptschule
       what_en: Mondern Secondary School
       company: Hauptschule Ampfing
-      location: 
+      location:
         - name_de: Ampfing
           name_en: Ampfing
           osm_link: https://www.openstreetmap.org/way/227101853#map=18/48.25677/12.41261
@@ -297,7 +298,7 @@ education:
       what_de: Grundschule
       what_en: Primary School
       company: Grundschule Finsing/Ampfing
-      location: 
+      location:
         - name_de: Finsing
           name_en: Finsing
         - name_de: Ampfing

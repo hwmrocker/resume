@@ -228,6 +228,24 @@ window.generateTimeline = (exp, edu, linux) ->
         }
       ]
     }
+    {
+      label: "Go programming"
+      times: [
+        {
+          "starting_time": Date.parse(new Date("2017-05-01"))
+          "ending_time": Date.parse(new Date())
+        }
+      ]
+    }
+    {
+      label: "Docker"
+      times: [
+        {
+          "starting_time": Date.parse(new Date("2016-08-01"))
+          "ending_time": Date.parse(new Date())
+        }
+      ]
+    }
   ]
   chart = d3.timeline().width(800).stack(true).tickFormat(
     format: d3.time.format("%Y")
