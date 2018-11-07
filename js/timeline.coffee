@@ -233,7 +233,7 @@ window.generateTimeline = (exp, edu, linux) ->
       times: [
         {
           "starting_time": Date.parse(new Date("2017-05-01"))
-          "ending_time": Date.parse(new Date())
+          "ending_time": Date.parse(new Date("2017-12-31"))
         }
       ]
     }
