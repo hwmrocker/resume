@@ -34,8 +34,25 @@ experience:
   name_de: Praktische Erfahrung
   name_en: Hands on Experience
   timeframes:
-    - timeframe_de: Juli 2016 - jetzt
-      timeframe_en: July 2016 - now
+    - timeframe_de: Dezember 2019 - jetzt
+      timeframe_en: December 2019 - now
+      uid: xtrivago
+      what_de: Backend Software Engineering
+      what_en: Backend Software Engineering
+      company: trivago GmbH
+      url: http://company.trivago.de/
+      location:
+        - name_de: Düsseldorf
+          name_en: Düsseldorf
+          osm_link: "https://www.openstreetmap.org/way/24659294"
+      description_de: Stream processing sowie Cloud Migration in AWS und GCP.
+      description_en: Stream processing, cloud migration in AWS and GCP.
+      technology:
+        - Linux
+        - Python
+        - Docker
+    - timeframe_de: Juli 2016 - November 2019
+      timeframe_en: July 2016 - November 2019
       uid: xtrivago
       what_de: Release Engineer
       what_en: Release Engineer
@@ -50,7 +67,7 @@ experience:
       technology:
         - Linux
         - Python
-        - Go
+        - Docker
     - timeframe_de: März 2016 - Juni 2016
       timeframe_en: March 2016 - June 2016
       uid: xkaasa
