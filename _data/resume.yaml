@@ -74,7 +74,7 @@ experience:
       what_de: Programmierer
       what_en: Developer
       company: Kaasa Home Automation GmbH
-      url: http://kaasahome.com/home/
+      url: https://web.archive.org/web/20190125111431/http://kaasahome.com/home/
       location:
         - name_de: Düsseldorf
           name_en: Düsseldorf
@@ -96,7 +96,7 @@ experience:
       what_de: Game Developer
       what_en: Game Developer
       company: Pokermania GmbH
-      url: http://pokermania.org/
+      url: https://web.archive.org/web/20160606134405/http://www.pokermania.org/
       location:
         - name_de: München
           name_en: Munich
@@ -188,7 +188,7 @@ experience:
       what_de: Diplomarbeit
       what_en: Diplom Thesis
       company: Robert BOSCH GmbH
-      url: http://www.bosch.de/de/de/our_company_1/locations_1/locations-detail_2944.html
+      url: https://www.bosch.de/unser-unternehmen/bosch-in-deutschland/hildesheim/
       location:
         - name_de: Hildesheim
           name_en: Hildesheim
@@ -208,7 +208,7 @@ experience:
       what_de: Praxissemester
       what_en: Integrated Semester
       company: Robert BOSCH GmbH
-      url: http://www.bosch.de/de/de/our_company_1/locations_1/locations-detail_2944.html
+      url: https://www.bosch.de/unser-unternehmen/bosch-in-deutschland/hildesheim/
       location:
         - name_de: Hildesheim
           name_en: Hildesheim
@@ -304,6 +304,7 @@ education:
       what_de: Hauptschule
       what_en: Mondern Secondary School
       company: Hauptschule Ampfing
+      url: https://mittelschule-ampfing.de/
       location:
         - name_de: Ampfing
           name_en: Ampfing
@@ -315,6 +316,7 @@ education:
       what_de: Grundschule
       what_en: Primary School
       company: Grundschule Finsing/Ampfing
+      url: https://www.grundschule-ampfing.de/
       location:
         - name_de: Finsing
           name_en: Finsing
