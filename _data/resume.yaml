@@ -6,8 +6,7 @@ Personalien:
     - Lichtenbroicher Weg 68
     - 40472 Düsseldorf
   Telefon: +49 176 964 171 65
-  eMail:  job@gladis.org
-
+  eMail: job@gladis.org
 
 linux:
   name_de: Erfahrung mit Linux
@@ -34,8 +33,24 @@ experience:
   name_de: Praktische Erfahrung
   name_en: Hands on Experience
   timeframes:
-    - timeframe_de: Dezember 2019 - jetzt
-      timeframe_en: December 2019 - now
+    - timeframe_de: Januar 2023 - jetzt
+      timeframe_en: January 2023 - now
+      uid: xzeppelin
+      what_de: Senior Data Engineering
+      what_en: Senior Data Engineering
+      company: Zeppelin GmbH
+      url: http://zeppelin.com/de/de/
+      location:
+        - name_de: remote
+          name_en: remote
+      description_de: Stream processing in AWS und Migrationen.
+      description_en: Stream processing in AWS and migrations.
+      technology:
+        - Linux
+        - Python
+        - Docker
+    - timeframe_de: Dezember 2019 - Dezember 2022
+      timeframe_en: December 2019 - December 2022
       uid: xtrivago
       what_de: Backend Software Engineering
       what_en: Backend Software Engineering
