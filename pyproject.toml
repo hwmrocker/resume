@@ -1,0 +1,23 @@
+[project]
+name = "vue-resume"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Olaf Gladis", email = "hwmrocker@gladis.org" }
+]
+dependencies = [
+    "pydantic>=2.6.0",
+    "pyyaml>=6.0.1",
+    "email-validator>=2.1.0.post1",
+    "ipython>=8.12.3",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.scripts]
+hello = "vue_resume:hello"
+
+[tool.rye]
+managed = true
+virtual = true
+dev-dependencies = []
