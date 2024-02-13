@@ -31,7 +31,18 @@ const props = defineProps({
     }
 });
 
-
+const imported_logos = [
+    IconAnsibleWordmark, IconVisualbasic, IconC, IconCplusplus, IconSass, IconStylus,
+    IconLinux, IconPython, IconAmazonwebservicesWordmark, IconCoffeescriptWordmark,
+    IconVaultWordmark, IconNomadWordmark, IconConsulWordmark, IconTerraformWordmark,
+    IconFastapi, IconMysql, IconPostgresql, IconApachekafkaWordmark, IconHtml5Wordmark,
+    IconGooglecloud, IconApacheairflow, IconKubernetes, IconPhp, IconJava,
+    IconJenkins, IconPerl, IconJavascript, IconGithubactions, IconDjangorest,
+    IconDockerWordmark, IconKubernetesWordmark
+];
+if (imported_logos == undefined || imported_logos == null) {
+    console.log("imported_logos is undefined or null");
+}
 const logo_name = computed(() => {
     if (props.logo == undefined || props.logo == null) {
         return undefined;
