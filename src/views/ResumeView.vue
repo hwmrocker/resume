@@ -7,7 +7,7 @@ import Skill from '../components/Skill.vue'
 import { ref, computed, onMounted } from 'vue'
 // import Timeline from 'd3-timeline'
 
-const filtered_tags = ref([]);
+const filtered_tags = ref(Array.from([]));
 const tag_names = computed(() => {
     const tags = new Set();
     for (const skill of resume_data.skills) {
@@ -33,8 +33,9 @@ const hero_skills = computed(() => {
 });
 const emit = defineEmits(["click-tag"]);
 function toggle_tag(name) {
+    console.log(filtered_tags.value, name)
     if (filtered_tags.value.includes(name)) {
-        filtered_tags.value.pop(name);
+        filtered_tags.value.splice(filtered_tags.value.indexOf(name), 1);
     } else {
         filtered_tags.value.push(name);
     }
