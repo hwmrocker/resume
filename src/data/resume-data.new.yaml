@@ -644,15 +644,14 @@ skills:
     logo: Java
   - name: PHP
     periods:
-      - start_date: 2009-01-01
-        end_date: 2016-02-29
-      - start_date: 2012-07-01
-        end_date: 2016-02-29
+      - start_date: 2014-04-01
+        end_date: 2015-02-29
       - start_date: 2009-01-01
         end_date: 2009-12-31
+      - start_date: 2006-01-01
+        end_date: 2006-12-31
     groups:
       - language
-    double_check: true
     logo: Php
   - name: Perl
     periods: []
@@ -663,19 +662,9 @@ skills:
     periods:
       - start_date: 2007-03-01
         end_date: 2008-05-31
-      - start_date: 2007-10-01
-        end_date: 2008-05-31
-      - start_date: 2007-03-01
-        end_date: 2007-09-30
     groups: []
-    double_check: true
   - name: FlexRay
     periods:
       - start_date: 2007-03-01
         end_date: 2008-05-31
-      - start_date: 2007-10-01
-        end_date: 2008-05-31
-      - start_date: 2007-03-01
-        end_date: 2007-09-30
     groups: []
-    double_check: true
