@@ -4,6 +4,7 @@ import Job from '../components/Job.vue'
 import Edu from '../components/Edu.vue'
 import Tag from '../components/Tag.vue'
 import Skill from '../components/Skill.vue'
+import Hero from '../components/Hero.vue'
 import { ref, computed, onMounted } from 'vue'
 // import Timeline from 'd3-timeline'
 
@@ -57,10 +58,11 @@ function drawTimeline() {
     <main>
         <h1>Resume</h1>
         <section>
+            <h2>About Me</h2>
+            <Hero />
+        </section>
+        <section>
             <h2>Skills</h2>
-
-
-
             <div class="hero-skills">
                 <skill v-for="skill in hero_skills" :key="skill.name" :name="skill.name" :level="skill.level"
                     :periods="skill.periods" :logo="skill.logo" />
