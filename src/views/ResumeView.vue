@@ -5,6 +5,7 @@ import Edu from '../components/Edu.vue'
 import Tag from '../components/Tag.vue'
 import Skill from '../components/Skill.vue'
 import Hero from '../components/Hero.vue'
+import Ideal from '../components/Ideal.vue'
 import { ref, computed, onMounted } from 'vue'
 // import Timeline from 'd3-timeline'
 
@@ -88,6 +89,9 @@ function drawTimeline() {
                     :start_date="school.start_date" :end_date="school.end_date" :tags="school.technology" :url="school.url"
                     :type="school.what_en" :locations="school.locations" />
             </ul>
+        </section>
+        <section>
+            <Ideal />
         </section>
     </main>
 </template>
