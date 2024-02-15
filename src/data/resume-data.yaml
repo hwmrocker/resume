@@ -96,7 +96,7 @@ experience:
       - Jade
       - Stylus (CSS)
       - Gulp
-      - Websockets
+      - Websocket
       - Python
     uid: xkaasa
     url: https://web.archive.org/web/20190125111431/http://kaasahome.com/home/
@@ -116,7 +116,7 @@ experience:
     technology:
       - Linux
       - Python
-      - Websockets
+      - Websocket
       - MySQL
       - Coffee Script
       - Java Script
@@ -442,7 +442,7 @@ skills:
       - web_dev
       - language
     logo: Html5Wordmark
-  - name: Websockets
+  - name: Websocket
     periods:
       - start_date: 2012-07-01
         end_date: 2016-06-30
@@ -458,7 +458,7 @@ skills:
     groups:
       - backend
       - cloud
-    logo: KubernetesWordmark
+    logo: Kubernetes
   - name: Kafka
     periods:
       - start_date: 2019-12-01
@@ -466,7 +466,7 @@ skills:
     level: advanced
     groups:
       - data
-    logo: ApachekafkaWordmark
+    logo: Apachekafka
   - name: Kinesis
     periods:
       - start_date: 2019-12-01
@@ -490,7 +490,7 @@ skills:
     groups:
       - ops
       - cloud
-    logo: TerraformWordmark
+    logo: Terraform
   - name: Airflow
     periods:
       - start_date: 2023-06-01
@@ -537,7 +537,7 @@ skills:
     groups:
       - ops
       - cloud
-    logo: ConsulWordmark
+    logo: Consul
   - name: Nomad
     periods:
       - start_date: 2016-07-01
@@ -545,7 +545,7 @@ skills:
     groups:
       - ops
       - cloud
-    logo: NomadWordmark
+    logo: Nomad
   - name: Vault
     periods:
       - start_date: 2016-07-01
@@ -553,7 +553,7 @@ skills:
     groups:
       - ops
       - cloud
-    logo: VaultWordmark
+    logo: Vault
   - name: SASS (CSS)
     periods:
       - start_date: 2011-04-01
