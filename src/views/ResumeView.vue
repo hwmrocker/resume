@@ -60,9 +60,8 @@ function drawTimeline() {
 
 <template>
     <main>
-        <h1>Resume</h1>
+        <h1 class="main">Resume</h1>
         <section>
-            <h2>About Me</h2>
             <Hero />
         </section>
         <section>
@@ -100,6 +99,11 @@ function drawTimeline() {
 </template>
 
 <style>
+h1.main {
+    text-align: center;
+    font-size: 4em;
+}
+
 ul {
     margin-left: 0;
     padding: 0;
@@ -122,6 +126,7 @@ div.skills {
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
+    padding: 1em;
 }
 
 div.skills::after {

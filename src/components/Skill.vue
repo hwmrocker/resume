@@ -64,7 +64,7 @@ const experience_years = computed(() => {
 </script>
 
 <template>
-    <div>
+    <div class="skill">
         <svg viewBox="0 0 128 128" width="100px" height="100px" v-if="name === 'Django'">
             <path fill="#092e20"
                 d="M59.448 0h20.93v96.88c-10.737 2.04-18.62 2.855-27.181 2.855-25.551-.001-38.87-11.551-38.87-33.705 0-21.338 14.135-35.2 36.015-35.2 3.398 0 5.98.272 9.106 1.087zm0 48.765c-2.446-.815-4.485-1.086-7.067-1.086-10.6 0-16.717 6.523-16.717 17.939 0 11.145 5.845 17.26 16.582 17.26 2.309 0 4.212-.136 7.202-.542z">
@@ -162,10 +162,17 @@ const experience_years = computed(() => {
         <p>{{ level }}</p>
         <p>{{ experience_years }} years</p>
 
-</div></template>
+    </div>
+</template>
 
-<style>svg {
+<style>
+svg {
     width: 100px;
     height: 100px !important;
+}
+
+.skill {
+    width: 115px;
+    margin-bottom: 1em;
 }
 </style>

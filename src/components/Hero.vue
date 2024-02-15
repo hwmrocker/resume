@@ -62,6 +62,12 @@ ul {
     padding: 0;
 }
 
+.col {
+    flex: 1;
+    padding: 0 20px;
+    align-self: center;
+}
+
 .social-media {
     margin-top: 20px;
 

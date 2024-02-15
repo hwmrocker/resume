@@ -77,8 +77,7 @@ function format_date(date) {
 <style scoped>
 li {
     list-style-type: none;
-    padding: 1em;
-    transition: all 1s linear;
+    padding-bottom: 1em;
     display: flex;
     flex-direction: column;
 }
