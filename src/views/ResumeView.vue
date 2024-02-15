@@ -13,6 +13,9 @@ const filtered_tags = ref(Array.from([]));
 const tag_names = computed(() => {
     const tags = new Set();
     for (const skill of resume_data.skills) {
+        if (skill.hide_me) {
+            continue;
+        }
         tags.add(skill.name);
         if (skill.groups.includes("hero")) {
             filtered_tags.value.push(skill.name);

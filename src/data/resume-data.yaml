@@ -366,7 +366,7 @@ skills:
     groups:
       - ops
       - hero
-    logo: DockerWordmark
+    logo: Docker
   - name: Asyncio
     periods:
       - start_date: 2016-07-01
@@ -438,6 +438,7 @@ skills:
   - name: HTML
     periods:
       - start_date: 2001-09-01
+    level: advanced
     groups:
       - web_dev
       - language
@@ -506,7 +507,7 @@ skills:
     level: intermediate
     groups:
       - ops
-    logo: AnsibleWordmark
+    logo: Ansible
   - name: Bare Metal
     periods:
       - start_date: 2011-04-01
@@ -514,6 +515,7 @@ skills:
       - start_date: 2009-01-01
         end_date: 2009-12-31
     groups: []
+    hide_me: true
   - name: Serverless
     periods:
       - start_date: 2023-07-01
@@ -534,6 +536,7 @@ skills:
     periods:
       - start_date: 2016-07-01
         end_date: 2019-11-30
+    level: intermediate
     groups:
       - ops
       - cloud
@@ -542,6 +545,7 @@ skills:
     periods:
       - start_date: 2016-07-01
         end_date: 2019-11-30
+    level: intermediate
     groups:
       - ops
       - cloud
@@ -550,6 +554,7 @@ skills:
     periods:
       - start_date: 2016-07-01
         end_date: 2019-11-30
+    level: intermediate
     groups:
       - ops
       - cloud
@@ -562,6 +567,7 @@ skills:
       - web_dev
       - language
     logo: Sass
+    hide_me: true
   - name: Stylus (CSS)
     periods:
       - start_date: 2016-03-01
@@ -570,6 +576,7 @@ skills:
       - web_dev
       - language
     logo: Stylus
+    hide_me: true
   - name: Less (CSS)
     periods:
       - start_date: 2012-07-01
@@ -577,6 +584,7 @@ skills:
     groups:
       - web_dev
       - language
+    hide_me: true
   - name: Coffee Script
     periods:
       - start_date: 2012-07-01
@@ -586,6 +594,7 @@ skills:
       - web_dev
       - language
     logo: CoffeescriptWordmark
+    hide_me: true
   - name: Java Script
     periods:
       - start_date: 2011-04-01
@@ -604,6 +613,7 @@ skills:
       - web_dev
       - language
     logo: Gulp
+    hide_me: true
   - name: Jade
     level: intermediate
     periods:
@@ -612,6 +622,7 @@ skills:
     groups:
       - web_dev
       - language
+    hide_me: true
   - name: Basic
     periods:
       - start_date: 1997-01-01
@@ -619,10 +630,12 @@ skills:
     groups:
       - language
     logo: Visualbasic
+    hide_me: true
   - name: Assembler
     periods: []
     groups:
       - language
+    hide_me: true
   - name: C
     periods:
       - start_date: 2007-03-01
@@ -632,6 +645,7 @@ skills:
     groups:
       - language
     logo: C
+    hide_me: true
   - name: C++
     periods:
       - start_date: 2003-03-01
@@ -639,6 +653,7 @@ skills:
     groups:
       - language
     logo: Cplusplus
+    hide_me: true
   - name: Java
     periods:
       - start_date: 2003-09-01
@@ -646,6 +661,7 @@ skills:
     groups:
       - language
     logo: Java
+    hide_me: true
   - name: PHP
     periods:
       - start_date: 2014-04-01
@@ -657,18 +673,22 @@ skills:
     groups:
       - language
     logo: Php
+    hide_me: true
   - name: Perl
     periods: []
     groups:
       - language
     logo: Perl
+    hide_me: true
   - name: CAN
     periods:
       - start_date: 2007-03-01
         end_date: 2008-05-31
     groups: []
+    hide_me: true
   - name: FlexRay
     periods:
       - start_date: 2007-03-01
         end_date: 2008-05-31
     groups: []
+    hide_me: true
