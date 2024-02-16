@@ -30,10 +30,7 @@ yarn build
 
 
 TODO:
-- [ ] Add a `resume.yaml` file to store the resume data
-- [ ] Add photo
 - [ ] Show timeline of work and education
-- [ ] Add `skill` to timeline
 - [ ] prerender /
 - [ ] allow to change the email via a query parameter
 - [ ] fix css theme / colors
