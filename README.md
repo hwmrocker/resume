@@ -30,7 +30,5 @@ yarn build
 
 
 TODO:
-- [ ] Show timeline of work and education
-- [ ] prerender /
 - [ ] allow to change the email via a query parameter
 - [ ] fix css theme / colors
