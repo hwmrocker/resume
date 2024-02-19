@@ -36,6 +36,20 @@ const hero_skills = computed(() => {
     }
     return hskills;
 });
+
+const show_all_experiences = ref(true);
+
+const experiences = computed(() => {
+    const return_value = [];
+    for (const experience of resume_data.experience) {
+        if (show_all_experiences.value === false && experience.hide_me) {
+            continue;
+        }
+        return_value.push(experience);
+    }
+    return return_value;
+});
+
 const emit = defineEmits(["click-tag"]);
 function toggle_tag(name) {
     console.log(filtered_tags.value, name)
@@ -79,7 +93,7 @@ function drawTimeline() {
 
             <h2>Hands on Experience</h2>
             <ul>
-                <Job v-for="job in resume_data.experience" :id="job.uid" :company="job.company" :company_url="job.url"
+                <Job v-for="job in experiences" :id="job.uid" :company="job.company" :company_url="job.url"
                     :title="job.what_de" :description="job.description_de" :start_date="job.start_date"
                     :end_date="job.end_date" :locations="job.locations" :tags="job.technology" />
             </ul>
