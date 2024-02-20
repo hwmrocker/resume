@@ -9,20 +9,35 @@ import Ideal from '../components/Ideal.vue'
 import { ref, computed, onMounted } from 'vue'
 // import Timeline from 'd3-timeline'
 
-const filtered_tags = ref(Array.from([]));
-const tag_names = computed(() => {
-    const tags = new Set();
-    for (const skill of resume_data.skills) {
-        if (skill.hide_me) {
-            continue;
-        }
-        tags.add(skill.name);
-        if (skill.groups.includes("hero")) {
-            filtered_tags.value.push(skill.name);
-        }
-    };
-    return Array.from(tags).sort();
-});
+const params = new URLSearchParams(window.location.search);
+const option_skills_to_hide = (params.get('hide_skills') || '').split(',');
+const option_skills_to_show = (params.get('show_skills') || '').split(',');
+
+const highlighted_tags = ref(Array.from([]));
+
+for (const skill of resume_data.skills) {
+    if (skill.hide_me) {
+        continue;
+    }
+    if (skill.groups.includes("hero")) {
+        highlighted_tags.value.push(skill.name);
+    }
+};
+for (const skill_to_hide of option_skills_to_hide) {
+    highlighted_tags.value.splice(highlighted_tags.value.indexOf(skill_to_hide), 1);
+}
+for (const skill_to_show of option_skills_to_show) {
+    highlighted_tags.value.push(skill_to_show);
+}
+const tags = new Set();
+for (const skill of resume_data.skills) {
+    if (skill.hide_me) {
+        continue;
+    }
+    tags.add(skill.name);
+};
+
+const tag_names = ref(Array.from(tags).sort());
 
 const hero_skills = computed(() => {
     const hskills = [];
@@ -30,7 +45,7 @@ const hero_skills = computed(() => {
         if (skill.hide_me) {
             continue;
         }
-        if (filtered_tags.value.includes(skill.name)) {
+        if (highlighted_tags.value.includes(skill.name)) {
             hskills.push(skill);
         }
     }
@@ -65,15 +80,15 @@ const educations = computed(() => {
 
 const emit = defineEmits(["click-tag"]);
 function toggle_tag(name) {
-    console.log(filtered_tags.value, name)
-    if (filtered_tags.value.includes(name)) {
-        filtered_tags.value.splice(filtered_tags.value.indexOf(name), 1);
+    console.log(highlighted_tags.value, name)
+    if (highlighted_tags.value.includes(name)) {
+        highlighted_tags.value.splice(highlighted_tags.value.indexOf(name), 1);
     } else {
-        filtered_tags.value.push(name);
+        highlighted_tags.value.push(name);
     }
 }
 function tag_is_filtered(name) {
-    return filtered_tags.value.includes(name);
+    return highlighted_tags.value.includes(name);
 }
 
 onMounted(() => {

@@ -3,7 +3,8 @@ import { ref } from 'vue';
 
 const name = ref('Olaf Gladis');
 const interests = ref(['Dad', 'FOSS', 'Python']);
-const email = ref('jobs');
+const params = new URLSearchParams(window.location.search);
+const email = ref(params.get('email') || 'jobs');
 </script>
 
 <template>
@@ -15,8 +16,9 @@ const email = ref('jobs');
             <p>Email: <a :href="'mailto:' + email + '@gladis.org'">{{ email }}@gladis.org</a></p>
 
             <div class="social-media">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/olaf-gladis-8996241b6/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/hwmrocker/" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
         </div>
         <div class="col">
