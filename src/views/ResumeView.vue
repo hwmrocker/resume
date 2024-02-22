@@ -127,7 +127,8 @@ function drawTimeline() {
         </section>
         <section>
 
-            <h2>Hands on Experience</h2>
+            <h2 v-if="show_all_experiences">Hands on Experience</h2>
+            <h2 v-else>Selection of my Hands on Experience</h2>
             <ul>
                 <li>
                     <button @click="show_all_experiences = !show_all_experiences">
@@ -140,7 +141,8 @@ function drawTimeline() {
             </ul>
         </section>
         <section>
-            <h2>Education</h2>
+            <h2 v-if="show_all_education">My Education</h2>
+            <h2 v-else>Selection of my Education</h2>
             <ul>
                 <li>
                     <button @click="show_all_education = !show_all_education">
