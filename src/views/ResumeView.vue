@@ -12,11 +12,11 @@ import { ref, computed, onMounted } from 'vue'
 const params = new URLSearchParams(window.location.search);
 const preset = resume_data.presets?.[params.get('preset')];
 const option_skills_to_hide = (params.get('hide_skills') || '').split(',');
-if (preset.skills_to_hide) {
+if (preset?.skills_to_hide) {
     option_skills_to_hide.push(...preset.skills_to_hide);
 }
 const option_skills_to_show = (params.get('show_skills') || '').split(',');
-if (preset.skills_to_show) {
+if (preset?.skills_to_show) {
     option_skills_to_show.push(...preset.skills_to_show);
 }
 
