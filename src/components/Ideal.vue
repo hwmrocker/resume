@@ -2,29 +2,49 @@
     <div class="ideal">
         <h2>My ideal position</h2>
         <p>
-            In my dream position, I would work with multiple teams and be available to advise on what a new architecture
-            might look like. But also help with PR reviews. I would encourage knowledge sharing by hosting a guild where
-            everyone can train to present. Identify knowledge gaps in teams and make sure the right training is available
-            for them. Help organize internal conferences.
+            My ideal role thrives on collaboration and knowledge exchange. I envision myself actively contributing across
+            diverse teams, lending my expertise to shape new architectures while also diving into code reviews and fostering
+            a culture of continuous learning.
+        </p>
+        <p>
+            To ignite knowledge sharing, I picture myself leading a vibrant guild where anyone can hone their presentation
+            skills. By identifying knowledge gaps within teams, I'd curate targeted training programs to bridge those gaps
+            and ensure everyone has the resources they need to excel.
+        </p>
+        <p>
+            Furthermore, I'm passionate about fostering a vibrant internal community. Contributing to the organization of
+            internal conferences would allow me to connect colleagues, celebrate achievements, and cultivate a culture of
+            shared knowledge and growth.
         </p>
         <h2>My ideal employer</h2>
         <p>
-            Helps fight climate change, supports free and open source software, and gives back to the community. Supports a
-            Linux development environment and values a healthy developer culture, values trust, makes decisions based on
-            evidence, and allows anyone to challenge the status quo. They are not publicly traded, value their employees,
-            and do not disband departments just to increase short-term profits. They have a long-term goal and a holistic
-            view. They are profitable and not dependent on VC money.
+            is fiercely committed to combating climate change, harnessing the power of free and
+            open-source software, and actively contributing to the community they serve. They foster a thriving Linux
+            development environment, where a healthy developer culture is cultivated. Trust, transparency, and a willingness
+            to challenge the status quo are fundamental to their success.
+        </p>
+        <p>
+
+            Data-driven decision-making is paramount, ensuring every action aligns with their long-term vision and holistic
+            approach. Eschewing the short-term pressures of public markets, they prioritize employee well-being and
+            stability, shunning the practice of dismantling departments for fleeting profits. Instead, they operate with a
+            clear, long-term goal in mind, driven by internal resources and not dependent on external funding.
         </p>
 
         <h2>My ideal job</h2>
         <p>
-            I will earn 100k € per year, not including bonuses. I can work from home 100% of the time. We meet in person 2-4
-            times a year for a few days and focus on social interactions on those days. A good work-life balance is
-            guaranteed, I can have 30 days vacation per year.
+            My ideal role offers a competitive compensation package, exceeding €100,000 annually, excluding potential
+            bonuses. Remote work is embraced, allowing me to thrive in a flexible environment while maintaining a healthy
+            work-life balance.
+
+            To foster a strong team culture, we gather in person 2-4 times a year for focused social interactions, nurturing
+            connections and building camaraderie.
+
+            Generous vacation time of 30 days ensures ample opportunity for personal rejuvenation and exploration.
         </p>
         <p>
-            If you know of a place where (almost) all of this is possible, drop me a line, some points are negotiable for
-            the right employer or position.
+            If you know of a hidden gem that ticks almost all these boxes, hit me up! I'm flexible on some points for the
+            right fit.
         </p>
     </div>
 </template>
