@@ -132,7 +132,7 @@ function drawTimeline() {
             <ul>
                 <li>
                     <button @click="show_all_experiences = !show_all_experiences">
-                        {{ show_all_experiences ? "Hide" : "Show" }} all experiences
+                        {{ show_all_experiences ? "See only highlighted experiences" : "Show all experiences" }}
                     </button>
                 </li>
                 <Job v-for="job in experiences" :id="job.uid" :company="job.company" :company_url="job.url"
@@ -146,7 +146,7 @@ function drawTimeline() {
             <ul>
                 <li>
                     <button @click="show_all_education = !show_all_education">
-                        {{ show_all_education ? "Hide" : "Show" }} all education
+                        {{ show_all_education ? "See only highlighted education" : "Show all education" }}
                     </button>
                 </li>
                 <Edu v-for="school in educations" :id="school.uid" :name="school.company" :degree="school.degree"
