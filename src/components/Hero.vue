@@ -23,24 +23,26 @@ const email = preset?.email || params.get('email');
         </div>
         <div class="col">
             <h2>What I love</h2>
-
-
             <p>
-
-                I love being a father. Work/life balance is very important to me, so I prefer to work from home. This way I
-                am very flexible and can pick up my kids from school and take them to their hobbies.
+                My life finds its rhythm in two passions: being a dedicated father and the captivating world of code. While
+                family always comes first, I've discovered a fulfilling balance that allows me to excel in both areas.
+                Remote work grants me the flexibility to be present for my children, actively involved in their lives, while
+                simultaneously pursuing my professional ambitions. This harmonious approach translates into unwavering
+                dedication and a proven track record of exceeding expectations.
             </p>
             <p>
-                I am a big fan of Free and Open Source Software (FOSS). It started in 2002 when I installed Linux for the
-                first time. Shortly after that, in 2005, I switched completely to Linux as my main operating system.
+                Beyond the realm of fatherhood, my heart beats for open-source software and the elegance of Python. Since
+                venturing into the world of Linux in 2002, I've become a staunch advocate for FOSS, actively contributing to
+                user groups, organizing meetups, and fostering a vibrant community of collaboration. This fervor extends to
+                Python, where its expressiveness allows me to craft code with minimal fuss and maximum impact. Joining the
+                local Python User Group in 2016 ignited a journey of continuous learning, knowledge sharing, and mentoring
+                others. At trivago, I spearheaded the internal Python guild, conducted trainings, and collaborated with
+                local communities on events – witnessing their growth fueled immense satisfaction.
             </p>
             <p>
-                I also love to code. My favorite is Python. It is amazing how little you have to write to express what needs
-                to be done. Since 2016 I attend the Python User Group in my city. I enjoy learning new things. But at the
-                same time sharing my knowledge with others, mentoring them and seeing them grow. I had a good time as a
-                Python knowledge lead at trivago, where I founded and hosted the internal Python guild. I also take joy in
-                organizing trainings and workshops for my colleagues. The same goes working with local groups to organize
-                meetups, hackathons, or sprints.
+                My passion extends beyond technical skills. I believe in fostering vibrant communities, empowering others
+                through mentorship, and actively sharing knowledge. If you share these values and seek someone who thrives
+                in a collaborative environment, let's connect!
             </p>
         </div>
     </div>
