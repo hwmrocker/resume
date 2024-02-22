@@ -51,10 +51,37 @@ experience:
       - Terraform
       - Faust
       - Apache Beam
-    uid: xtrivago
+    uid: xtrivagode
     url: http://company.trivago.de/
     what_de: Backend Software Engineering
     what_en: Backend Software Engineering
+  - company: trivago GmbH
+    description_de: Hauptverantwortlicher für das Wissen im Bereich der
+      Softwareentwicklung mit Python. Aufbau interner Standards und Best Practices. Indetifikation
+      von Wissenslücken und deren Schließung. Kooperation mit externen Partnern sowie Planung und
+      Durchführung von Workshops, Schulungen, Sprints und Hackathons.
+    description_en:
+      Main responsible for the knowledge in the field of software development with Python.
+      Building internal standards and best practices. Identification of knowledge gaps and their closure.
+      Cooperation with external partners as well as planning and conducting workshops, training, sprints and hackathons.
+    start_date: 2019-02-01
+    end_date: 2022-12-31
+    locations:
+      - name: Düsseldorf
+        osm_link: https://www.openstreetmap.org/way/24659294
+      - name: remote
+    technology:
+      - Python
+      - Pytest
+      - Asyncio
+      - Django
+      - Django REST Framework
+      - Faust
+      - Apache Beam
+    uid: xtrivagokl
+    url: http://company.trivago.de/
+    what_de: Knowledge Lead / Subject Matter Expert
+    what_en: Knowledge Lead / Subject Matter Expert
   - company: trivago GmbH
     description_de:
       Verbesserung des Release Prozesses und Dezimirung der Legacy Bash
@@ -77,7 +104,7 @@ experience:
       - Bare Metal
       - Django REST Framework
       - Asyncio
-    uid: xtrivago
+    uid: xtrivagore
     url: http://company.trivago.de/
     what_de: Release Engineer
     what_en: Release Engineer
@@ -102,6 +129,7 @@ experience:
     url: https://web.archive.org/web/20190125111431/http://kaasahome.com/home/
     what_de: Programmierer
     what_en: Developer
+    hide_me: true
   - company: Pokermania GmbH
     description_de: Backend Development der Pokerplattform.
     description_en: Backend Development of the Poker Platform.
@@ -127,6 +155,7 @@ experience:
     url: https://web.archive.org/web/20160606134405/http://www.pokermania.org/
     what_de: Game Developer
     what_en: Game Developer
+    hide_me: true
   - company: Personal Novel
     description_de: Fullstack Entwicklung
     description_en: Fullstack Development
@@ -147,6 +176,7 @@ experience:
     url: http://www.personalnovel.de/
     what_de: Full Stack Developer
     what_en: Full Stack Developer
+    hide_me: true
   - company: Tec de Monterrey
     description_de: Design and Implementation of a Net-Based and General Tagging System
     description_en: Design and Implementation of a Net-Based and General Tagging System
@@ -164,6 +194,7 @@ experience:
     url: http://www.itesm.mx/wps/wcm/connect/campus/mty/monterrey
     what_de: Master Thesis
     what_en: Master Thesis
+    hide_me: true
   - company: Hochschule Ravensburg-Weingarten
     description_de: Betreuung der E-Learning Plattform und Unterstützung der Professoren
     description_en:
@@ -183,6 +214,7 @@ experience:
     url: https://www.hs-weingarten.de/web/rechenzentrum/e-learning
     what_de: Akademischer Mitarbeiter
     what_en: Academic Staff
+    hide_me: true
   - company: Robert BOSCH GmbH
     description_de:
       Konzeption und Implementierung einer Busmirrorapplikation für ein
@@ -205,6 +237,7 @@ experience:
     url: https://www.bosch.de/unser-unternehmen/bosch-in-deutschland/hildesheim/
     what_de: Diplomarbeit
     what_en: Diplom Thesis
+    hide_me: true
   - company: Robert BOSCH GmbH
     description_de:
       Inbetriebnahme eines Nodes und Implementierung der CAN und FlexRay
@@ -226,6 +259,7 @@ experience:
     url: https://www.bosch.de/unser-unternehmen/bosch-in-deutschland/hildesheim/
     what_de: Praxissemester
     what_en: Integrated Semester
+    hide_me: true
 education:
   - company: Hochschule Ravensburg-Weingarten
     degree: Master Informatik
@@ -280,6 +314,7 @@ education:
       - Linux
     what_de: Berufskolleg
     what_en: Berufskolleg
+    hide_me: true
   - company: Ferdinand Porsche Realschule
     degree: Mittlere Reife
     start_date: 1998-09-01
@@ -292,6 +327,7 @@ education:
     technology: []
     what_de: Realschule
     what_en: secondary school (Realschule)
+    hide_me: true
   - company: Hauptschule Ampfing
     start_date: 1995-09-01
     end_date: 1998-08-31
@@ -303,6 +339,7 @@ education:
     technology: []
     what_de: Hauptschule
     what_en: Mondern Secondary School
+    hide_me: true
   - company: Grundschule Finsing/Ampfing
     start_date: 1991-09-01
     end_date: 1995-08-31
@@ -315,6 +352,7 @@ education:
     technology: []
     what_de: Grundschule
     what_en: Primary School
+    hide_me: true
 skills:
   - name: Linux
     periods:
@@ -692,3 +730,8 @@ skills:
         end_date: 2008-05-31
     groups: []
     hide_me: true
+presets:
+  abc:
+    email: foo
+    skills_to_hide: [Linux]
+    skills_to_show: [Kafka]
