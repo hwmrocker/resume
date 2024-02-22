@@ -730,3 +730,8 @@ skills:
         end_date: 2008-05-31
     groups: []
     hide_me: true
+presets:
+  abc:
+    email: foo
+    skills_to_hide: [Linux]
+    skills_to_show: [Kafka]

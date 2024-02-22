@@ -10,8 +10,15 @@ import { ref, computed, onMounted } from 'vue'
 // import Timeline from 'd3-timeline'
 
 const params = new URLSearchParams(window.location.search);
+const preset = resume_data.presets?.[params.get('preset')];
 const option_skills_to_hide = (params.get('hide_skills') || '').split(',');
+if (preset.skills_to_hide) {
+    option_skills_to_hide.push(...preset.skills_to_hide);
+}
 const option_skills_to_show = (params.get('show_skills') || '').split(',');
+if (preset.skills_to_show) {
+    option_skills_to_show.push(...preset.skills_to_show);
+}
 
 const highlighted_tags = ref(Array.from([]));
 

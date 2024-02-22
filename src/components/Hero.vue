@@ -1,10 +1,10 @@
 <script setup>
 import { ref } from 'vue';
-
-const name = ref('Olaf Gladis');
-const interests = ref(['Dad', 'FOSS', 'Python']);
+import resume_data from '../data/resume-data.yaml';
+const name = 'Olaf Gladis';
 const params = new URLSearchParams(window.location.search);
-const email = ref(params.get('email') || 'jobs');
+const preset = resume_data.presets?.[params.get('preset')];
+const email = preset?.email || params.get('email');
 </script>
 
 <template>
@@ -13,7 +13,7 @@ const email = ref(params.get('email') || 'jobs');
             <img src="https://gravatar.com/avatar/e03f1979511d1bb67b796379ff285735?s=200" alt="Profile Picture"
                 class="profile-picture" />
             <h1>{{ name }}</h1>
-            <p>Email: <a :href="'mailto:' + email + '@gladis.org'">{{ email }}@gladis.org</a></p>
+            <p v-if="email">Email: <a :href="'mailto:' + email + '@gladis.org'">{{ email }}@gladis.org</a></p>
 
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/olaf-gladis-8996241b6/" target="_blank"
