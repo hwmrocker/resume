@@ -136,7 +136,7 @@ function drawTimeline() {
                     </button>
                 </li>
                 <Job v-for="job in experiences" :id="job.uid" :company="job.company" :company_url="job.url"
-                    :title="job.what_de" :description="job.description_de" :start_date="job.start_date"
+                    :title="job.what_de" :description="job.description_en" :start_date="job.start_date"
                     :end_date="job.end_date" :locations="job.locations" :tags="job.technology" />
             </ul>
         </section>

@@ -8,7 +8,11 @@ basics:
 experience:
   - company: Zeppelin GmbH
     description_de: Stream processing in AWS und Migrationen.
-    description_en: Stream processing in AWS and migrations.
+    description_en:
+      Master of legacy code and modern pipelines, Skilled in maintaining legacy code while
+      revamping real-time data pipelines with Kafka and Faust. Developed REST APIs for data
+      access and optimized operations by migrating Airflow to serverless Lambdas. Held
+      ownership of a critical 10k-employee payroll pipeline, ensuring data quality and security.
     start_date: 2023-01-01
     locations:
       - name: remote
@@ -30,7 +34,11 @@ experience:
     what_en: Senior Data Engineering
   - company: trivago GmbH
     description_de: Stream processing sowie Cloud Migration in AWS und GCP.
-    description_en: Stream processing, cloud migration in AWS and GCP.
+    description_en:
+      Streamlined data pipelines, Migrated a complex pipeline to GCP, achieving increased
+      efficiency and scalability with Kubernetes, Kafka, and BigQuery. Proven track record in
+      managing and enhancing streaming pipelines using diverse tools like Lambdas, DynamoDB,
+      Apache Beam, and Faust.
     start_date: 2019-12-01
     end_date: 2022-12-31
     locations:
@@ -61,9 +69,9 @@ experience:
       von Wissenslücken und deren Schließung. Kooperation mit externen Partnern sowie Planung und
       Durchführung von Workshops, Schulungen, Sprints und Hackathons.
     description_en:
-      Main responsible for the knowledge in the field of software development with Python.
-      Building internal standards and best practices. Identification of knowledge gaps and their closure.
-      Cooperation with external partners as well as planning and conducting workshops, training, sprints and hackathons.
+      Orchestrated Python knowledge management, establishing standards, identifying skill gaps,
+      and providing training activities like workshops, sprints, and hackathons. Collaborated
+      with external partners to ensure cutting-edge knowledge and foster practical learning.
     start_date: 2019-02-01
     end_date: 2022-12-31
     locations:
@@ -86,7 +94,10 @@ experience:
     description_de:
       Verbesserung des Release Prozesses und Dezimirung der Legacy Bash
       Release.
-    description_en: Improving the release process and getting rid of legacy bash releases.
+    description_en:
+      Modernized release process. Streamlined workflow by replacing legacy bash scripts with
+      a robust, fully tested Python tool. Achieved significant efficiency gains, reducing
+      deployment time from 3 hours to 7 minutes and enabling on-demand deployments.
     start_date: 2016-07-01
     end_date: 2019-11-30
     locations:
@@ -132,7 +143,11 @@ experience:
     hide_me: true
   - company: Pokermania GmbH
     description_de: Backend Development der Pokerplattform.
-    description_en: Backend Development of the Poker Platform.
+    description_en: >-
+      Engineered async backend with Twisted & Websockets for real-time communication in a
+      multiplayer game. Proficient in MySQL data management and adept at debugging intricate
+      game logic. Notably reproduced and fixed a rare deadlock, showcasing advanced analytical
+      skills.
     start_date: 2012-07-01
     end_date: 2016-02-29
     locations:
@@ -158,7 +173,10 @@ experience:
     hide_me: true
   - company: Personal Novel
     description_de: Fullstack Entwicklung
-    description_en: Fullstack Development
+    description_en: >-
+      Developed a full-stack webstore using Python, Jinja2, SASS, and JQuery. Implemented
+      backend logic with SQLAlchemy and MySQL. Generated and manipulated dynamic PDFs with
+      templated LaTeX.
     start_date: 2011-04-01
     end_date: 2012-06-30
     locations:
