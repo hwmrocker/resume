@@ -159,8 +159,8 @@ const experience_years = computed(() => {
         <!-- <img src="https://via.placeholder.com/100" alt="placeholder" v-else /> -->
         <fa icon="fa-solid fa-ghost" v-else width="100px" height="100px" />
         <h3> {{ name }} </h3>
-        <p>{{ level }}</p>
-        <p>{{ experience_years }} years</p>
+        {{ level }}<br />
+        {{ experience_years }} years
 
     </div>
 </template>

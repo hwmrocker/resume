@@ -74,34 +74,3 @@ function format_date(date) {
     </li>
 </template>
 
-<style scoped>
-li {
-    list-style-type: none;
-    padding-bottom: 1em;
-    display: flex;
-    flex-direction: column;
-}
-
-span {
-
-    &.date {
-        font-weight: bold;
-        font-size: 15px;
-        color: #818181;
-    }
-
-    &.location {
-        font-size: 0.8em;
-        color: #818181;
-
-        a {
-            color: #515151;
-        }
-    }
-
-    &.comma {
-        padding-right: 0.5em;
-    }
-
-}
-</style>

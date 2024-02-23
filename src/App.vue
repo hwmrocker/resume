@@ -24,10 +24,7 @@ header {
   max-height: 100vh;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+
 
 nav {
   width: 100%;
@@ -54,7 +51,7 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   header {
     display: flex;
     place-items: center;
@@ -78,6 +75,9 @@ nav a:first-of-type {
 
     padding: 1rem 0;
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 }
 </style>

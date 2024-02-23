@@ -154,9 +154,6 @@ function drawTimeline() {
                     :type="school.what_en" :locations="school.locations" />
             </ul>
         </section>
-        <section>
-            <Ideal />
-        </section>
     </main>
 </template>
 
@@ -174,25 +171,55 @@ ul {
 div.hero-skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
 }
 
-div.hero-skills::after {
+/* div.hero-skills::after {
     content: "";
     flex: auto;
-}
+} */
 
 div.skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
     padding: 1em;
 }
 
-div.skills::after {
+/* div.skills::after {
     content: "";
     flex: auto;
+} */
+
+li {
+    list-style-type: none;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+
+    &.date {
+        font-weight: bold;
+        font-size: 15px;
+        color: #818181;
+    }
+
+    &.location {
+        font-size: 0.8em;
+        color: #818181;
+
+        a {
+            color: #515151;
+        }
+    }
+
+    &.comma {
+        padding-right: 0.5em;
+    }
+
 }
 </style>
