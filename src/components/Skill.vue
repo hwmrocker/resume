@@ -166,13 +166,13 @@ const experience_years = computed(() => {
 </template>
 
 <style>
-svg {
-    width: 100px;
-    height: 100px !important;
-}
-
 .skill {
     width: 115px;
     margin-bottom: 1em;
+
+    svg {
+        width: 100px;
+        height: 100px !important;
+    }
 }
 </style>
