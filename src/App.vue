@@ -2,8 +2,15 @@
 import { ref } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 import { useI18n } from "vue-i18n";
+import resume_data from './data/resume-data.yaml'
 
 const { t, locale } = useI18n();
+const params = new URLSearchParams(window.location.search);
+const preset = resume_data.presets?.[params.get('preset')];
+const lang = params.get('lang') || preset?.lang || 'en';
+if (new Set(['de', 'en']).has(lang)) {
+  locale.value = lang;
+}
 </script>
 
 <template>

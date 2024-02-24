@@ -23,11 +23,6 @@ if (preset?.skills_to_show) {
     option_skills_to_show.push(...preset.skills_to_show);
 }
 
-const lang = params.get('lang') || preset?.lang || 'en';
-if (new Set(['de', 'en']).has(lang)) {
-    locale.value = lang;
-}
-
 const highlighted_tags = ref(Array.from([]));
 
 for (const skill of resume_data.skills) {
