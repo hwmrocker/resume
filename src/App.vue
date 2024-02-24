@@ -1,30 +1,50 @@
 <script setup>
+import { ref } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { useI18n } from "vue-i18n";
+
+const { t, locale } = useI18n();
+
+const params = new URLSearchParams(window.location.search);
+const lang = params.get('lang');
+if (lang in ['de', 'en']) {
+  locale.value = lang;
+}
+
 </script>
 
 <template>
+  <div class="locale-changer">
+    <select v-model="$i18n.locale">
+      <option v-for=" locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}</option>
+    </select>
+  </div>
   <RouterView />
 
   <footer>
     <div class="wrapper">
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/love">What I Love</RouterLink>
-        <RouterLink to="/ideal-job">My dream Job</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">{{ $t("page.home") }}</RouterLink>
+        <RouterLink to="/love">{{ $t("page.love") }}</RouterLink>
+        <RouterLink to="/ideal-job">{{ $t("page.ideal-job") }}</RouterLink>
+        <RouterLink to="/about">{{ $t("page.about") }}</RouterLink>
       </nav>
     </div>
   </footer>
 </template>
 
 <style scoped>
+.locale-changer {
+  float: right;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;
 }
-
-
 
 nav {
   width: 100%;
@@ -72,7 +92,6 @@ nav a:first-of-type {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
     display: flex;

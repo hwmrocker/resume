@@ -7,6 +7,9 @@ import Skill from '../components/Skill.vue'
 import Hero from '../components/Hero.vue'
 import Ideal from '../components/Ideal.vue'
 import { ref, computed, onMounted } from 'vue'
+import { useI18n } from "vue-i18n";
+const { t, locale } = useI18n();
+
 // import Timeline from 'd3-timeline'
 
 const params = new URLSearchParams(window.location.search);
@@ -105,6 +108,11 @@ onMounted(() => {
 function drawTimeline() {
     // const t = Timeline();
 }
+
+function get_t(job, what) {
+    // what can be "description" or "what"
+    return job[what + "_" + locale.value] || job[what + "_en"];
+}
 </script>
 
 <template>
@@ -127,31 +135,31 @@ function drawTimeline() {
         </section>
         <section>
 
-            <h2 v-if="show_all_experiences">Hands on Experience</h2>
-            <h2 v-else>Selection of my Hands on Experience</h2>
+            <h2 v-if="show_all_experiences">{{ $t("exp.all") }}</h2>
+            <h2 v-else>{{ $t("exp.selection") }}</h2>
             <ul>
                 <li>
                     <button @click="show_all_experiences = !show_all_experiences">
-                        {{ show_all_experiences ? "See only highlighted experiences" : "Show all experiences" }}
+                        {{ show_all_experiences ? $t("exp.show_selection") : $t("exp.show_all") }}
                     </button>
                 </li>
                 <Job v-for="job in experiences" :id="job.uid" :company="job.company" :company_url="job.url"
-                    :title="job.what_de" :description="job.description_en" :start_date="job.start_date"
+                    :title="get_t(job, 'what')" :description="get_t(job, 'description')" :start_date="job.start_date"
                     :end_date="job.end_date" :locations="job.locations" :tags="job.technology" />
             </ul>
         </section>
         <section>
-            <h2 v-if="show_all_education">My Education</h2>
-            <h2 v-else>Selection of my Education</h2>
+            <h2 v-if="show_all_education">{{ $t("edu.all") }}</h2>
+            <h2 v-else>{{ $t("edu.selection") }}</h2>
             <ul>
                 <li>
                     <button @click="show_all_education = !show_all_education">
-                        {{ show_all_education ? "See only highlighted education" : "Show all education" }}
+                        {{ show_all_education ? $t("edu.show_selection") : $t("edu.show_all") }}
                     </button>
                 </li>
                 <Edu v-for="school in educations" :id="school.uid" :name="school.company" :degree="school.degree"
                     :start_date="school.start_date" :end_date="school.end_date" :tags="school.technology" :url="school.url"
-                    :type="school.what_en" :locations="school.locations" />
+                    :type="get_t(school, 'what')" :locations="school.locations" />
             </ul>
         </section>
     </main>
