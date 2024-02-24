@@ -4,13 +4,6 @@ import { RouterLink, RouterView } from 'vue-router'
 import { useI18n } from "vue-i18n";
 
 const { t, locale } = useI18n();
-
-const params = new URLSearchParams(window.location.search);
-const lang = params.get('lang');
-if (lang in ['de', 'en']) {
-  locale.value = lang;
-}
-
 </script>
 
 <template>
