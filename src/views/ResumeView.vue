@@ -92,7 +92,6 @@ const educations = computed(() => {
 
 const emit = defineEmits(["click-tag"]);
 function toggle_tag(name) {
-    console.log(highlighted_tags.value, name)
     if (highlighted_tags.value.includes(name)) {
         highlighted_tags.value.splice(highlighted_tags.value.indexOf(name), 1);
     } else {

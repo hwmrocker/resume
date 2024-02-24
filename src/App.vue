@@ -7,7 +7,7 @@ import resume_data from './data/resume-data.yaml'
 const { t, locale } = useI18n();
 const params = new URLSearchParams(window.location.search);
 const preset = resume_data.presets?.[params.get('preset')];
-const lang = params.get('lang') || preset?.lang || 'en';
+const lang = params.get('lang') || preset?.lang || (window.navigator.language || 'en').split('-')[0];
 if (new Set(['de', 'en']).has(lang)) {
   locale.value = lang;
 }

@@ -40,9 +40,6 @@ const imported_logos = [
     IconJenkins, IconPerl, IconJavascript, IconGithubactions, IconDjangorest,
     IconDocker, IconKubernetes
 ];
-if (imported_logos == undefined || imported_logos == null) {
-    console.log("imported_logos is undefined or null");
-}
 const logo_name = computed(() => {
     if (props.logo == undefined || props.logo == null) {
         return undefined;
