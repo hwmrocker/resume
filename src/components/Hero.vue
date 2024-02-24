@@ -39,7 +39,7 @@ const email = preset?.email || params.get('email');
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 7px solid #000;
+    border: 7px solid var(--color-border);
     object-fit: cover;
     margin-bottom: 20px;
 }

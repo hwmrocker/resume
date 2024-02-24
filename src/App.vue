@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 import { useI18n } from "vue-i18n";
 import resume_data from './data/resume-data.yaml'
-
+import ThemeButton from "./components/ThemeButton.vue";
 const { t, locale } = useI18n();
 const params = new URLSearchParams(window.location.search);
 const preset = resume_data.presets?.[params.get('preset')];
@@ -15,6 +15,7 @@ if (new Set(['de', 'en']).has(lang)) {
 
 <template>
   <div class="locale-changer">
+    <ThemeButton />
     <select v-model="$i18n.locale">
       <option v-for=" locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}</option>
     </select>
@@ -36,6 +37,8 @@ if (new Set(['de', 'en']).has(lang)) {
 <style scoped>
 .locale-changer {
   float: right;
+  display: flex;
+  gap: 1rem;
   position: sticky;
   top: 0;
   z-index: 100;
