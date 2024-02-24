@@ -1,0 +1,31 @@
+{
+    "common": {
+        "years": "Jahre | Jahr | Jahre"
+    },
+    "skill": {
+        "level": {
+            "beginner": "Anfänger",
+            "intermediate": "Mittelstufe",
+            "advanced": "Fortgeschr.",
+            "expert": "Experte"
+        }
+    },
+    "page": {
+        "home": "Startseite",
+        "about": "Impressum",
+        "love": "Was ich liebe",
+        "ideal-job": "Mein Traumjob"
+    },
+    "edu": {
+        "show_selection": "nur Auswahl anzeigen",
+        "show_all": "zeige alles",
+        "selection": "Auswahl meiner Ausbildung",
+        "all": "Meine Ausbildungen"
+    },
+    "exp": {
+        "show_selection": "nur Auswahl anzeigen",
+        "show_all": "zeige alles",
+        "selection": "Auswahl meiner Berufserfahrung",
+        "all": "Meine Berufserfahrung"
+    }
+}

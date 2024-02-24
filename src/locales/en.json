@@ -1,0 +1,31 @@
+{
+    "common": {
+        "years": "years | year | years"
+    },
+    "skill": {
+        "level": {
+            "beginner": "Beginner",
+            "intermediate": "Intermediate",
+            "advanced": "Advanced",
+            "expert": "Expert"
+        }
+    },
+    "page": {
+        "home": "Home",
+        "about": "About",
+        "love": "What I Love",
+        "ideal-job": "My dream Job"
+    },
+    "edu": {
+        "show_selection": "See only highlighted education",
+        "show_all": "Show all education",
+        "selection": "Selection of my Education",
+        "all": "My Education"
+    },
+    "exp": {
+        "show_selection": "See only highlighted experiences",
+        "show_all": "Show all experiences",
+        "selection": "Selection of my Hands on Experiences",
+        "all": "My Hands on Experiences"
+    }
+}
