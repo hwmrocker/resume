@@ -774,3 +774,5 @@ presets:
     lang: de
     skills_to_hide: [Linux]
     skills_to_show: [Kafka]
+    show_all_edu: false
+    show_all_exp: true

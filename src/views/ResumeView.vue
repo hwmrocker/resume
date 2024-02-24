@@ -23,6 +23,9 @@ if (preset?.skills_to_show) {
     option_skills_to_show.push(...preset.skills_to_show);
 }
 
+const show_all_experiences = ref(preset?.show_all_exp || false);
+const show_all_education = ref(preset?.show_all_edu || false);
+
 const highlighted_tags = ref(Array.from([]));
 
 for (const skill of resume_data.skills) {
@@ -62,7 +65,7 @@ const hero_skills = computed(() => {
     return hskills;
 });
 
-const show_all_experiences = ref(false);
+
 
 const experiences = computed(() => {
     const return_value = [];
@@ -75,7 +78,6 @@ const experiences = computed(() => {
     return return_value;
 });
 
-const show_all_education = ref(false);
 
 const educations = computed(() => {
     const return_value = [];
