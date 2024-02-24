@@ -1,6 +1,28 @@
+<script setup>
+import { useI18n } from "vue-i18n";
+const { locale } = useI18n();
+</script>
 <template>
-    <div class="ideal">
-        <h2>My ideal position</h2>
+    <div class="ideal" v-if="locale === 'de'">
+        <h2>My dream Job</h2>
+        <p>
+            Meine ideale Rolle beruht auf Zusammenarbeit und Wissensaustausch. Ich stelle mir vor, dass ich in verschiedenen
+            Teams aktiv mitarbeite, mein Fachwissen in die Gestaltung neuer Architekturen einbringe, mich an Code-Reviews
+            beteilige und eine Kultur des kontinuierlichen Lernens fördere.
+        </p>
+        <p>
+            Um den Wissensaustausch zu fördern, stelle ich mir vor, dass ich eine lebendige Gilde leite, in der jeder seine
+            Präsentationsfähigkeiten verbessern kann. Indem ich Wissenslücken innerhalb von Teams identifiziere, würde ich
+            gezielte Schulungsprogramme entwickeln, um diese Lücken zu schließen und sicherzustellen, dass jeder die
+            Ressourcen hat, die er braucht, um Spitzenleistungen zu erbringen.
+        </p>
+        <p>
+            Außerdem liegt mir die Förderung einer lebhaften internen Gemeinschaft sehr am Herzen. Durch die Mitwirkung an
+            der Organisation interner Konferenzen könnte ich Kollegen zusammenbringen, Erfolge feiern und eine Kultur des
+            gemeinsamen Wissens und Wachstums pflegen.
+        </p>
+    </div>
+    <div class="ideal" v-else>
         <p>
             My ideal role thrives on collaboration and knowledge exchange. I envision myself actively contributing across
             diverse teams, lending my expertise to shape new architectures while also diving into code reviews and fostering
