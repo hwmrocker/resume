@@ -1,6 +1,7 @@
 {
     "common": {
-        "years": "years | year | years"
+        "years": "years | year | years",
+        "now": "now"
     },
     "skill": {
         "level": {

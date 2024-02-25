@@ -1,6 +1,7 @@
 {
     "common": {
-        "years": "Jahre | Jahr | Jahre"
+        "years": "Jahre | Jahr | Jahre",
+        "now": "jetzt"
     },
     "skill": {
         "level": {

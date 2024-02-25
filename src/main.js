@@ -22,6 +22,20 @@ const i18n = createI18n({
     messages: {
         en: en,
         de: de
+    },
+    datetimeFormats: {
+        en: {
+            custom: {
+                year: 'numeric',
+                month: 'long'
+            }
+        },
+        de: {
+            custom: {
+                year: 'numeric',
+                month: 'long'
+            }
+        }
     }
 })
 

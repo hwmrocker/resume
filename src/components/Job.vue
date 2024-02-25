@@ -1,5 +1,9 @@
 <script setup>
 import Tag from "./Tag.vue"
+import { useI18n } from "vue-i18n";
+const { t, d, locale } = useI18n(
+
+);
 
 const props = defineProps(
     {
@@ -47,10 +51,10 @@ const props = defineProps(
 
 function format_date(date) {
     if (date === undefined || date === null) {
-        return "now";
+        return t("common.now");
     }
     const options = { year: 'numeric', month: 'long' };
-    return new Date(date).toLocaleDateString(undefined, options);
+    return d(new Date(date), 'custom');
 }
 </script>
 
