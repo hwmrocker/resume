@@ -33,6 +33,7 @@ const email = preset?.email || params.get('email');
 .hero {
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .profile-picture {
