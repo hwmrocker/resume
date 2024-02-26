@@ -139,28 +139,28 @@ function get_t(job, what) {
             <h2 v-if="show_all_experiences">{{ $t("exp.all") }}</h2>
             <h2 v-else>{{ $t("exp.selection") }}</h2>
             <ul>
+                <Job v-for="job in experiences" :id="job.uid" :company="job.company" :company_url="job.url"
+                    :title="get_t(job, 'what')" :description="get_t(job, 'description')" :start_date="job.start_date"
+                    :end_date="job.end_date" :locations="job.locations" :tags="job.technology" />
                 <li>
                     <button @click="show_all_experiences = !show_all_experiences">
                         {{ show_all_experiences ? $t("exp.show_selection") : $t("exp.show_all") }}
                     </button>
                 </li>
-                <Job v-for="job in experiences" :id="job.uid" :company="job.company" :company_url="job.url"
-                    :title="get_t(job, 'what')" :description="get_t(job, 'description')" :start_date="job.start_date"
-                    :end_date="job.end_date" :locations="job.locations" :tags="job.technology" />
             </ul>
         </section>
         <section>
             <h2 v-if="show_all_education">{{ $t("edu.all") }}</h2>
             <h2 v-else>{{ $t("edu.selection") }}</h2>
             <ul>
+                <Edu v-for="school in educations" :id="school.uid" :name="school.company" :degree="school.degree"
+                    :start_date="school.start_date" :end_date="school.end_date" :tags="school.technology" :url="school.url"
+                    :type="get_t(school, 'what')" :locations="school.locations" />
                 <li>
                     <button @click="show_all_education = !show_all_education">
                         {{ show_all_education ? $t("edu.show_selection") : $t("edu.show_all") }}
                     </button>
                 </li>
-                <Edu v-for="school in educations" :id="school.uid" :name="school.company" :degree="school.degree"
-                    :start_date="school.start_date" :end_date="school.end_date" :tags="school.technology" :url="school.url"
-                    :type="get_t(school, 'what')" :locations="school.locations" />
             </ul>
         </section>
     </main>

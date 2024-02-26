@@ -62,7 +62,7 @@ function format_date(date) {
     <li :id="`frame_${id}`" class="">
         <span class="date">{{ format_date(start_date) }} - {{ format_date(end_date) }} <span class="degree"></span></span>
         <div>
-            <span class="jobtitle">{{ title }}</span> at
+            <span class="jobtitle">{{ title }}</span> {{ $t("job.at") }}
             <span class="company"><a :href="company_url">{{ company }}</a></span><span v-if="locations.length > 0"
                 class="comma">,</span>
 

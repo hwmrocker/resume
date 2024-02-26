@@ -4,7 +4,7 @@ const { locale } = useI18n();
 </script>
 <template>
     <div class="ideal" v-if="locale === 'de'">
-        <h2>My dream Job</h2>
+        <h2>Mein Traum Job</h2>
         <p>
             Meine ideale Rolle beruht auf Zusammenarbeit und Wissensaustausch. Ich stelle mir vor, dass ich in verschiedenen
             Teams aktiv mitarbeite, mein Fachwissen in die Gestaltung neuer Architekturen einbringe, mich an Code-Reviews
@@ -21,8 +21,32 @@ const { locale } = useI18n();
             der Organisation interner Konferenzen könnte ich Kollegen zusammenbringen, Erfolge feiern und eine Kultur des
             gemeinsamen Wissens und Wachstums pflegen.
         </p>
+        <h2>Mein idealer Arbeitgeber</h2>
+        <p>
+            Mein idealer Arbeitgeber setzt sich für den Kampf gegen den Klimawandel ein, nutzt die Möglichkeiten freier und
+            quelloffener Software und leistet einen aktiven Beitrag für die Gemeinschaft, der er dient. Sie fördern eine
+            florierende Linux-Entwicklungsumgebung, in der eine gesunde Entwicklerkultur gepflegt wird. Vertrauen,
+            Transparenz und die Bereitschaft, den Status quo in Frage zu stellen, sind die Grundlage für ihren Erfolg. Sie
+            kultivieren einen Arbeitsplatz, an dem sich Menschen mit unterschiedlichem Hintergrund willkommen und
+            respektiert fühlen.
+        </p>
+        <p>Die datengestützte Entscheidungsfindung steht an erster Stelle und gewährleistet, dass jede Maßnahme mit ihrer
+            langfristigen Vision und ihrem ganzheitlichen Ansatz in Einklang steht. Sie verzichten auf den kurzfristigen
+            Druck der öffentlichen Märkte und stellen das Wohlergehen und die Stabilität der Mitarbeiter in den Vordergrund,
+            ohne Abteilungen für flüchtige Gewinne abzubauen. Stattdessen haben sie ein klares, langfristiges Ziel vor
+            Augen, das von internen Ressourcen angetrieben wird und nicht von externen Mitteln abhängig ist.</p>
+        <h2>Meine ideale Stelle</h2>
+        <p>bietet ein wettbewerbsfähiges Gehaltspaket von über 100.000 € pro Jahr, ohne mögliche Bonuszahlungen. Fernarbeit
+            ist erwünscht, so dass ich mich in einem flexiblen Umfeld entfalten und gleichzeitig eine gesunde
+            Work-Life-Balance aufrechterhalten kann. Um eine starke Teamkultur zu fördern, treffen wir uns 2 bis 4 Mal im
+            Jahr persönlich, um uns auszutauschen, Kontakte zu pflegen und die Kameradschaft zu fördern. Ein großzügiger
+            Urlaub von 30 Tagen bietet ausreichend Gelegenheit zur persönlichen Erholung und Erkundung.</p>
+        <p>Wenn du ein verstecktes Juwel kennst, das fast alle diese Kriterien erfüllt, melde dich bei mir! Ich bin in
+            einigen Punkten flexibel, wenn es passt.</p>
     </div>
     <div class="ideal" v-else>
+        <h2>My dream Job</h2>
+
         <p>
             My ideal role thrives on collaboration and knowledge exchange. I envision myself actively contributing across
             diverse teams, lending my expertise to shape new architectures while also diving into code reviews and fostering
@@ -40,33 +64,29 @@ const { locale } = useI18n();
         </p>
         <h2>My ideal employer</h2>
         <p>
-            is fiercely committed to combating climate change, harnessing the power of free and
+            My ideal employer is fiercely committed to combating climate change, harnessing the power of free and
             open-source software, and actively contributing to the community they serve. They foster a thriving Linux
             development environment, where a healthy developer culture is cultivated. Trust, transparency, and a willingness
-            to challenge the status quo are fundamental to their success.
+            to challenge the status quo are fundamental to their success. They cultivate a workplace where individuals from
+            all backgrounds feel welcomed and respected.
         </p>
         <p>
-
             Data-driven decision-making is paramount, ensuring every action aligns with their long-term vision and holistic
             approach. Eschewing the short-term pressures of public markets, they prioritize employee well-being and
             stability, shunning the practice of dismantling departments for fleeting profits. Instead, they operate with a
             clear, long-term goal in mind, driven by internal resources and not dependent on external funding.
-        </p>
+    </p>
 
-        <h2>My ideal job</h2>
-        <p>
-            My ideal role offers a competitive compensation package, exceeding €100,000 annually, excluding potential
-            bonuses. Remote work is embraced, allowing me to thrive in a flexible environment while maintaining a healthy
-            work-life balance.
-
-            To foster a strong team culture, we gather in person 2-4 times a year for focused social interactions, nurturing
-            connections and building camaraderie.
-
-            Generous vacation time of 30 days ensures ample opportunity for personal rejuvenation and exploration.
-        </p>
-        <p>
-            If you know of a hidden gem that ticks almost all these boxes, hit me up! I'm flexible on some points for the
-            right fit.
-        </p>
-    </div>
-</template>
+    <h2>My ideal job</h2>
+    <p>
+        offers a competitive compensation package, exceeding €100,000 annually, excluding potential bonuses. Remote work
+        is embraced, allowing me to thrive in a flexible environment while maintaining a healthy work-life balance. To
+        foster a strong team culture, we gather in person 2-4 times a year for focused social interactions, nurturing
+        connections and building camaraderie. Generous vacation time of 30 days ensures ample opportunity for personal
+        rejuvenation and exploration.
+    </p>
+    <p>
+        If you know of a hidden gem that ticks almost all these boxes, hit me up! I'm flexible on some points for the
+        right fit.
+    </p>
+</div></template>

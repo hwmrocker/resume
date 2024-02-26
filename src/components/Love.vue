@@ -28,6 +28,10 @@ const { locale } = useI18n();
             Gemeinschaften, die Unterstützung anderer durch Mentoren und den aktiven Austausch von Wissen. Wenn Sie diese
             Werte teilen und jemanden suchen, der in einem kollaborativen Umfeld gedeiht, sollten wir uns kennenlernen!
         </p>
+        <p>Außerhalb der Arbeit genieße ich es, mich mit Freunden und Familie bei einem gut gespielten Brettspiel zu
+            treffen. Ob ich nun in Age of Empires 2 eine Strategie entwickle, in der Küche köstliche Gerichte zubereite oder
+            die Welt mit dem Fahrrad erkunde - ich glaube daran, dass ich die verschiedenen Erfahrungen des Lebens mit einem
+            spielerischen Geist genießen kann.</p>
     </div>
     <div v-else>
         <p>
@@ -50,5 +54,8 @@ const { locale } = useI18n();
             My passion extends beyond technical skills. I believe in fostering vibrant communities, empowering others
             through mentorship, and actively sharing knowledge. If you share these values and seek someone who thrives in a
             collaborative environment, let's connect!
-    </p>
+        </p>
+        <p>Outside of work, I find joy in connecting with friends and family over a well-played board game. Whether it's
+            strategizing in Age of Empires 2, creating delicious dishes in the kitchen, or exploring the world on my bike, I
+        believe in embracing life's diverse experiences with a playful spirit.</p>
 </div></template>
