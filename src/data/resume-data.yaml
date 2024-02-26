@@ -398,12 +398,10 @@ skills:
     level: expert
     groups:
       - hero
-    logo: Linux
   - name: Linux
     periods:
       - start_date: 2002-09-01
     groups: []
-    logo: Linux
     hide_me: true
   - name: Python
     periods:
@@ -412,7 +410,6 @@ skills:
     groups:
       - language
       - hero
-    logo: Python
   - name: MySQL
     periods:
       - start_date: 2010-01-01
@@ -421,7 +418,6 @@ skills:
       - backend
       - data
       - hero
-    logo: Mysql
   - name: Django
     periods:
       - start_date: 2009-05-01
@@ -442,7 +438,6 @@ skills:
     groups:
       - ops
       - hero
-    logo: Docker
   - name: Asyncio
     periods:
       - start_date: 2016-07-01
@@ -450,7 +445,6 @@ skills:
     groups:
       - library
       - hero
-    logo: Python
   - name: AWS
     periods:
       - start_date: 2023-01-01
@@ -461,7 +455,6 @@ skills:
       - cloud
       - ops
       - hero
-    logo: AmazonwebservicesWordmark
   - name: GCP
     periods:
       - start_date: 2021-01-01
@@ -471,7 +464,6 @@ skills:
       - cloud
       - ops
       - hero
-    logo: Googlecloud
   - name: Django REST Framework
     periods:
       - start_date: 2016-07-01
@@ -480,7 +472,6 @@ skills:
     groups:
       - library
       - backend
-    logo: Djangorest
   - name: Apache Beam
     periods:
       - start_date: 2019-12-01
@@ -502,7 +493,6 @@ skills:
     level: advanced
     groups:
       - ops
-    logo: Githubactions
   - name: Jenkins
     periods:
       - start_date: 2016-07-01
@@ -510,7 +500,6 @@ skills:
     level: advanced
     groups:
       - ops
-    logo: Jenkins
   - name: HTML
     periods:
       - start_date: 2001-09-01
@@ -518,7 +507,6 @@ skills:
     groups:
       - web_dev
       - language
-    logo: Html5Wordmark
   - name: Websocket
     periods:
       - start_date: 2012-07-01
@@ -535,7 +523,6 @@ skills:
     groups:
       - backend
       - cloud
-    logo: Kubernetes
   - name: Kafka
     periods:
       - start_date: 2019-12-01
@@ -543,7 +530,6 @@ skills:
     level: advanced
     groups:
       - data
-    logo: Apachekafka
   - name: Kinesis
     periods:
       - start_date: 2019-12-01
@@ -567,7 +553,6 @@ skills:
     groups:
       - ops
       - cloud
-    logo: Terraform
   - name: Airflow
     periods:
       - start_date: 2023-06-01
@@ -575,7 +560,6 @@ skills:
     level: intermediate
     groups:
       - data
-    logo: Apacheairflow
   - name: Ansible
     periods:
       - start_date: 2016-07-01
@@ -583,7 +567,6 @@ skills:
     level: intermediate
     groups:
       - ops
-    logo: Ansible
   - name: Bare Metal
     periods:
       - start_date: 2011-04-01
@@ -607,7 +590,6 @@ skills:
     groups:
       - backend
       - library
-    logo: Fastapi
   - name: Consul
     periods:
       - start_date: 2016-07-01
@@ -616,7 +598,6 @@ skills:
     groups:
       - ops
       - cloud
-    logo: Consul
   - name: Nomad
     periods:
       - start_date: 2016-07-01
@@ -625,7 +606,6 @@ skills:
     groups:
       - ops
       - cloud
-    logo: Nomad
   - name: Vault
     periods:
       - start_date: 2016-07-01
@@ -634,7 +614,6 @@ skills:
     groups:
       - ops
       - cloud
-    logo: Vault
   - name: SASS (CSS)
     periods:
       - start_date: 2011-04-01
@@ -642,7 +621,6 @@ skills:
     groups:
       - web_dev
       - language
-    logo: Sass
     hide_me: true
   - name: Stylus (CSS)
     periods:
@@ -651,7 +629,6 @@ skills:
     groups:
       - web_dev
       - language
-    logo: Stylus
     hide_me: true
   - name: Less (CSS)
     periods:
@@ -669,7 +646,6 @@ skills:
     groups:
       - web_dev
       - language
-    logo: CoffeescriptWordmark
     hide_me: true
   - name: Java Script
     periods:
@@ -679,7 +655,6 @@ skills:
     groups:
       - web_dev
       - language
-    logo: Javascript
   - name: Gulp
     level: beginner
     periods:
@@ -688,7 +663,6 @@ skills:
     groups:
       - web_dev
       - language
-    logo: Gulp
     hide_me: true
   - name: Jade
     level: intermediate
@@ -705,7 +679,6 @@ skills:
         end_date: 2001-01-01
     groups:
       - language
-    logo: Visualbasic
     hide_me: true
   - name: Assembler
     periods: []
@@ -720,7 +693,6 @@ skills:
         end_date: 2005-01-01
     groups:
       - language
-    logo: C
     hide_me: true
   - name: C++
     periods:
@@ -728,7 +700,6 @@ skills:
         end_date: 2005-01-01
     groups:
       - language
-    logo: Cplusplus
     hide_me: true
   - name: Java
     periods:
@@ -736,7 +707,6 @@ skills:
         end_date: 2008-10-01
     groups:
       - language
-    logo: Java
     hide_me: true
   - name: PHP
     periods:
@@ -748,13 +718,11 @@ skills:
         end_date: 2006-12-31
     groups:
       - language
-    logo: Php
     hide_me: true
   - name: Perl
     periods: []
     groups:
       - language
-    logo: Perl
     hide_me: true
   - name: CAN
     periods:
