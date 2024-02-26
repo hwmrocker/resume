@@ -11,9 +11,9 @@ import { createI18n } from 'vue-i18n'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 // import { all } from '@awesome.me/kit-KIT_CODE'
-import { faEnvelope, faRobot, faGhost } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 /* add icons to the library */
-library.add(faEnvelope, faRobot, faGhost)
+library.add(faEnvelope)
 
 const i18n = createI18n({
     // something vue-i18n options here ...

@@ -31,20 +31,41 @@ const props = defineProps({
     }
 });
 
-const imported_logos = [
-    IconAnsible, IconVisualbasic, IconC, IconCplusplus, IconSass, IconStylus,
-    IconLinux, IconPython, IconAmazonwebservicesWordmark, IconCoffeescriptWordmark,
-    IconVault, IconNomad, IconConsul, IconTerraform,
-    IconFastapi, IconMysql, IconPostgresql, IconApachekafka, IconHtml5Wordmark,
-    IconGooglecloud, IconApacheairflow, IconKubernetes, IconPhp, IconJava,
-    IconJenkins, IconPerl, IconJavascript, IconGithubactions, IconDjangorest,
-    IconDocker, IconKubernetes
-];
 const logo_name = computed(() => {
     if (props.logo == undefined || props.logo == null) {
         return undefined;
     }
-    return eval("Icon" + props.logo);
+    if (props.logo === "IconAnsible") { return IconAnsible }
+    if (props.logo === "IconVisualbasic") { return IconVisualbasic }
+    if (props.logo === "IconC") { return IconC }
+    if (props.logo === "IconCplusplus") { return IconCplusplus }
+    if (props.logo === "IconSass") { return IconSass }
+    if (props.logo === "IconStylus") { return IconStylus }
+    if (props.logo === "IconLinux") { return IconLinux }
+    if (props.logo === "IconPython") { return IconPython }
+    if (props.logo === "IconAmazonwebservicesWordmark") { return IconAmazonwebservicesWordmark }
+    if (props.logo === "IconCoffeescriptWordmark") { return IconCoffeescriptWordmark }
+    if (props.logo === "IconVault") { return IconVault }
+    if (props.logo === "IconNomad") { return IconNomad }
+    if (props.logo === "IconConsul") { return IconConsul }
+    if (props.logo === "IconTerraform") { return IconTerraform }
+    if (props.logo === "IconFastapi") { return IconFastapi }
+    if (props.logo === "IconMysql") { return IconMysql }
+    if (props.logo === "IconPostgresql") { return IconPostgresql }
+    if (props.logo === "IconApachekafka") { return IconApachekafka }
+    if (props.logo === "IconHtml5Wordmark") { return IconHtml5Wordmark }
+    if (props.logo === "IconGooglecloud") { return IconGooglecloud }
+    if (props.logo === "IconApacheairflow") { return IconApacheairflow }
+    if (props.logo === "IconKubernetes") { return IconKubernetes }
+    if (props.logo === "IconPhp") { return IconPhp }
+    if (props.logo === "IconJava") { return IconJava }
+    if (props.logo === "IconJenkins") { return IconJenkins }
+    if (props.logo === "IconPerl") { return IconPerl }
+    if (props.logo === "IconJavascript") { return IconJavascript }
+    if (props.logo === "IconGithubactions") { return IconGithubactions }
+    if (props.logo === "IconDjangorest") { return IconDjangorest }
+    if (props.logo === "IconDocker") { return IconDocker }
+    if (props.logo === "IconKubernetes") { return IconKubernetes }
 });
 
 const experience_years = computed(() => {
@@ -153,8 +174,7 @@ const experience_years = computed(() => {
                 d="M89.624 211.2H49.89l43.945-91.853l19.912 40.992zm7.079-100.63a3.216 3.216 0 0 0-2.887-1.805h-.01a3.204 3.204 0 0 0-2.886 1.82L41.913 213.022a3.203 3.203 0 0 0 2.893 4.58l46.848-.001a3.21 3.21 0 0 0 2.9-1.83l25.65-54.08a3.183 3.183 0 0 0-.016-2.762zM207.985 211.2h-39.477L105.174 78.624a3.206 3.206 0 0 0-2.897-1.824h-25.83l.03-32h50.626l63.042 132.573a3.209 3.209 0 0 0 2.897 1.827h14.943zm3.208-38.4h-16.121L132.03 40.227a3.21 3.21 0 0 0-2.9-1.827H73.273a3.206 3.206 0 0 0-3.208 3.197l-.035 38.4c0 .851.333 1.664.94 2.265c.6.602 1.414.938 2.267.938h27.017l63.337 132.576a3.205 3.205 0 0 0 2.893 1.824h44.709a3.203 3.203 0 0 0 3.207-3.2V176c0-1.766-1.434-3.2-3.207-3.2" />
         </svg>
         <component :is="logo_name" width="100px" height="100px" v-else-if="logo" />
-        <!-- <img src="https://via.placeholder.com/100" alt="placeholder" v-else /> -->
-        <fa icon="fa-solid fa-ghost" v-else width="100px" height="100px" />
+        <img src="https://via.placeholder.com/100" alt="placeholder" v-else />
         <h3> {{ name }} </h3>
         {{ $t("skill.level." + level) }}<br />
         {{ experience_years }} {{ $t('common.years', { count: experience_years }) }}
@@ -166,10 +186,10 @@ const experience_years = computed(() => {
 .skill {
     width: 115px;
     margin-bottom: 1em;
+}
 
-    svg {
-        width: 100px;
-        height: 100px !important;
-    }
+.skill svg {
+    width: 100px;
+    height: 100px !important;
 }
 </style>

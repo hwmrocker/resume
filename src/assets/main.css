@@ -15,9 +15,10 @@ a {
   transition: 0.4s;
   padding: 3px;
 
-  &:visited {
-    color: var(--color-link-visited);
-  }
+}
+
+a:visited {
+  color: var(--color-link-visited);
 }
 
 h1,

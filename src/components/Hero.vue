@@ -59,9 +59,11 @@ ul {
 .social-media {
     margin-top: 20px;
 
-    a {
-        margin-right: 10px;
-    }
+
+}
+
+.social-media a {
+    margin-right: 10px;
 }
 
 p {
