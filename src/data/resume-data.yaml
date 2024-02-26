@@ -430,7 +430,6 @@ skills:
     groups:
       - library
       - backend
-      - hero
   - name: Docker
     periods:
       - start_date: 2016-08-01
@@ -463,7 +462,6 @@ skills:
     groups:
       - cloud
       - ops
-      - hero
   - name: Django REST Framework
     periods:
       - start_date: 2016-07-01
@@ -551,6 +549,7 @@ skills:
         end_date: 2023-12-31
     level: intermediate
     groups:
+      - hero
       - ops
       - cloud
   - name: Airflow
@@ -742,5 +741,5 @@ presets:
     lang: de
     skills_to_hide: [Linux]
     skills_to_show: [Kafka]
-    show_all_edu: false
     show_all_exp: true
+    show_all_edu: false

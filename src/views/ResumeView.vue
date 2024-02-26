@@ -14,11 +14,12 @@ const { t, locale } = useI18n();
 
 const params = new URLSearchParams(window.location.search);
 const preset = resume_data.presets?.[params.get('preset')];
-const option_skills_to_hide = (params.get('hide_skills') || '').split(',');
+const option_skills_to_hide = (params.get('hide_skills')?.split(',') || []);
 if (preset?.skills_to_hide) {
     option_skills_to_hide.push(...preset.skills_to_hide);
 }
-const option_skills_to_show = (params.get('show_skills') || '').split(',');
+
+const option_skills_to_show = (params.get('show_skills')?.split(',') || []);
 if (preset?.skills_to_show) {
     option_skills_to_show.push(...preset.skills_to_show);
 }
@@ -39,9 +40,11 @@ for (const skill of resume_data.skills) {
 for (const skill_to_hide of option_skills_to_hide) {
     highlighted_tags.value.splice(highlighted_tags.value.indexOf(skill_to_hide), 1);
 }
+
 for (const skill_to_show of option_skills_to_show) {
     highlighted_tags.value.push(skill_to_show);
 }
+
 const tags = new Set();
 for (const skill of resume_data.skills) {
     if (skill.hide_me) {
