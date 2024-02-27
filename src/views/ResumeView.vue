@@ -7,22 +7,53 @@ import Skill from '../components/Skill.vue'
 import Hero from '../components/Hero.vue'
 import Ideal from '../components/Ideal.vue'
 import { ref, computed, onMounted } from 'vue'
+import { useI18n } from "vue-i18n";
+const { t, locale } = useI18n();
+
 // import Timeline from 'd3-timeline'
 
-const filtered_tags = ref(Array.from([]));
-const tag_names = computed(() => {
-    const tags = new Set();
-    for (const skill of resume_data.skills) {
-        if (skill.hide_me) {
-            continue;
-        }
-        tags.add(skill.name);
-        if (skill.groups.includes("hero")) {
-            filtered_tags.value.push(skill.name);
-        }
-    };
-    return Array.from(tags).sort();
-});
+const params = new URLSearchParams(window.location.search);
+const preset = resume_data.presets?.[params.get('preset')];
+const option_skills_to_hide = (params.get('hide_skills')?.split(',') || []);
+if (preset?.skills_to_hide) {
+    option_skills_to_hide.push(...preset.skills_to_hide);
+}
+
+const option_skills_to_show = (params.get('show_skills')?.split(',') || []);
+if (preset?.skills_to_show) {
+    option_skills_to_show.push(...preset.skills_to_show);
+}
+
+const show_all_experiences = ref(preset?.show_all_exp || false);
+const show_all_education = ref(preset?.show_all_edu || false);
+
+const highlighted_tags = ref(Array.from([]));
+
+for (const skill of resume_data.skills) {
+    if (skill.hide_me) {
+        continue;
+    }
+    if (skill.groups.includes("hero")) {
+        highlighted_tags.value.push(skill.name);
+    }
+};
+for (const skill_to_hide of option_skills_to_hide) {
+    highlighted_tags.value.splice(highlighted_tags.value.indexOf(skill_to_hide), 1);
+}
+
+for (const skill_to_show of option_skills_to_show) {
+    highlighted_tags.value.push(skill_to_show);
+}
+
+const tags = new Set();
+for (const skill of resume_data.skills) {
+    if (skill.hide_me) {
+        continue;
+    }
+    tags.add(skill.name);
+};
+
+const tag_names = ref(Array.from(tags).sort());
 
 const hero_skills = computed(() => {
     const hskills = [];
@@ -30,23 +61,48 @@ const hero_skills = computed(() => {
         if (skill.hide_me) {
             continue;
         }
-        if (filtered_tags.value.includes(skill.name)) {
+        if (highlighted_tags.value.includes(skill.name)) {
             hskills.push(skill);
         }
     }
     return hskills;
 });
+
+
+
+const experiences = computed(() => {
+    const return_value = [];
+    for (const experience of resume_data.experience) {
+        if (show_all_experiences.value === false && experience.hide_me) {
+            continue;
+        }
+        return_value.push(experience);
+    }
+    return return_value;
+});
+
+
+const educations = computed(() => {
+    const return_value = [];
+    for (const school of resume_data.education) {
+        if (show_all_education.value === false && school.hide_me) {
+            continue;
+        }
+        return_value.push(school);
+    }
+    return return_value;
+});
+
 const emit = defineEmits(["click-tag"]);
 function toggle_tag(name) {
-    console.log(filtered_tags.value, name)
-    if (filtered_tags.value.includes(name)) {
-        filtered_tags.value.splice(filtered_tags.value.indexOf(name), 1);
+    if (highlighted_tags.value.includes(name)) {
+        highlighted_tags.value.splice(highlighted_tags.value.indexOf(name), 1);
     } else {
-        filtered_tags.value.push(name);
+        highlighted_tags.value.push(name);
     }
 }
-function is_filtered(name) {
-    return filtered_tags.value.includes(name);
+function tag_is_filtered(name) {
+    return highlighted_tags.value.includes(name);
 }
 
 onMounted(() => {
@@ -55,6 +111,11 @@ onMounted(() => {
 
 function drawTimeline() {
     // const t = Timeline();
+}
+
+function get_t(job, what) {
+    // what can be "description" or "what"
+    return job[what + "_" + locale.value] || job[what + "_en"];
 }
 </script>
 
@@ -72,28 +133,38 @@ function drawTimeline() {
 
             </div>
             <div class="skills">
-                <Tag v-for="tag in tag_names" :key="tag" :name="tag" :filtered="is_filtered(tag)" @click-tag="toggle_tag" />
+                <Tag v-for="tag in tag_names" :key="tag" :name="tag" :filtered="tag_is_filtered(tag)"
+                    @click-tag="toggle_tag" />
             </div>
         </section>
         <section>
 
-            <h2>Hands on Experience</h2>
+            <h2 v-if="show_all_experiences">{{ $t("exp.all") }}</h2>
+            <h2 v-else>{{ $t("exp.selection") }}</h2>
             <ul>
-                <Job v-for="job in resume_data.experience" :id="job.uid" :company="job.company" :company_url="job.url"
-                    :title="job.what_de" :description="job.description_de" :start_date="job.start_date"
+                <Job v-for="job in experiences" :id="job.uid" :company="job.company" :company_url="job.url"
+                    :title="get_t(job, 'what')" :description="get_t(job, 'description')" :start_date="job.start_date"
                     :end_date="job.end_date" :locations="job.locations" :tags="job.technology" />
+                <li>
+                    <button @click="show_all_experiences = !show_all_experiences">
+                        {{ show_all_experiences ? $t("exp.show_selection") : $t("exp.show_all") }}
+                    </button>
+                </li>
             </ul>
         </section>
         <section>
-            <h2>Education</h2>
+            <h2 v-if="show_all_education">{{ $t("edu.all") }}</h2>
+            <h2 v-else>{{ $t("edu.selection") }}</h2>
             <ul>
-                <Edu v-for="school in resume_data.education" :id="school.uid" :name="school.company" :degree="school.degree"
+                <Edu v-for="school in educations" :id="school.uid" :name="school.company" :degree="school.degree"
                     :start_date="school.start_date" :end_date="school.end_date" :tags="school.technology" :url="school.url"
-                    :type="school.what_en" :locations="school.locations" />
+                    :type="get_t(school, 'what')" :locations="school.locations" />
+                <li>
+                    <button @click="show_all_education = !show_all_education">
+                        {{ show_all_education ? $t("edu.show_selection") : $t("edu.show_all") }}
+                    </button>
+                </li>
             </ul>
-        </section>
-        <section>
-            <Ideal />
         </section>
     </main>
 </template>
@@ -112,25 +183,54 @@ ul {
 div.hero-skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
 }
 
-div.hero-skills::after {
+/* div.hero-skills::after {
     content: "";
     flex: auto;
-}
+} */
 
 div.skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
     padding: 1em;
 }
 
-div.skills::after {
+/* div.skills::after {
     content: "";
     flex: auto;
+} */
+
+li {
+    list-style-type: none;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+span.date {
+    font-weight: bold;
+    font-size: 15px;
+    color: #818181;
+}
+
+span.location {
+    font-size: 0.8em;
+    color: #818181;
+
+
+}
+
+span.location a {
+    color: #515151;
+}
+
+span.comma {
+    padding-right: 0.5em;
 }
 </style>

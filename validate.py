@@ -106,7 +106,6 @@ class Skill(BaseModel):
     level: SkillLevel | None = None
     groups: list[SkillCategory] = []
     double_check: bool | None = None
-    logo: str | None = None
     hide_me: bool | None = None
 
 

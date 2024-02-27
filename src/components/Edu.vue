@@ -1,4 +1,8 @@
 <script setup>
+import { useI18n } from "vue-i18n";
+const { t, d, locale } = useI18n(
+
+);
 const props = defineProps(
     {
         id: {
@@ -47,10 +51,10 @@ const props = defineProps(
 
 function format_date(date) {
     if (date === undefined || date === null) {
-        return "now";
+        return t("common.now");
     }
     const options = { year: 'numeric', month: 'long' };
-    return new Date(date).toLocaleDateString(undefined, options);
+    return d(new Date(date), 'custom');
 }
 </script>
 
@@ -74,46 +78,3 @@ function format_date(date) {
     </li>
 </template>
 
-<style scoped>
-li {
-    list-style-type: none;
-    padding-bottom: 1em;
-    display: flex;
-    flex-direction: column;
-}
-
-span {
-
-    &.date {
-        font-weight: bold;
-        /* display: block; */
-        font-size: 15px;
-        color: #818181;
-    }
-
-    &.location {
-        font-size: 0.8em;
-        color: #818181;
-
-        a {
-            color: #515151;
-        }
-    }
-
-    &.comma {
-        padding-right: 0.5em;
-    }
-
-    &.tag {
-        background-color: #222121;
-        color: #fff;
-        font-size: 0.8em;
-        padding: 0.1em;
-        padding-right: 0.5em;
-        padding-left: 0.5em;
-        margin: 0.1em;
-        border-radius: 5px;
-        display: inline-block;
-    }
-}
-</style>

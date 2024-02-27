@@ -1,30 +1,52 @@
 <script setup>
+import { ref } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { useI18n } from "vue-i18n";
+import resume_data from './data/resume-data.yaml'
+import ThemeButton from "./components/ThemeButton.vue";
+const { t, locale } = useI18n();
+const params = new URLSearchParams(window.location.search);
+const preset = resume_data.presets?.[params.get('preset')];
+const lang = params.get('lang') || preset?.lang || (window.navigator.language || 'en').split('-')[0];
+if (new Set(['de', 'en']).has(lang)) {
+  locale.value = lang;
+}
 </script>
 
 <template>
+  <div class="locale-changer">
+    <ThemeButton />
+    <select v-model="$i18n.locale">
+      <option v-for=" locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}</option>
+    </select>
+  </div>
   <RouterView />
 
   <footer>
     <div class="wrapper">
       <nav>
-        <RouterLink to="/">Resume</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">{{ $t("page.home") }}</RouterLink>
+        <RouterLink to="/love">{{ $t("page.love") }}</RouterLink>
+        <RouterLink to="/ideal-job">{{ $t("page.ideal-job") }}</RouterLink>
+        <RouterLink to="/about">{{ $t("page.about") }}</RouterLink>
       </nav>
     </div>
   </footer>
 </template>
 
 <style scoped>
+.locale-changer {
+  float: right;
+  display: flex;
+  gap: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
 }
 
 nav {
@@ -52,7 +74,7 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   header {
     display: flex;
     place-items: center;
@@ -73,9 +95,11 @@ nav a:first-of-type {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 }
 </style>

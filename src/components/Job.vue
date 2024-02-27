@@ -1,5 +1,9 @@
 <script setup>
 import Tag from "./Tag.vue"
+import { useI18n } from "vue-i18n";
+const { t, d, locale } = useI18n(
+
+);
 
 const props = defineProps(
     {
@@ -47,10 +51,10 @@ const props = defineProps(
 
 function format_date(date) {
     if (date === undefined || date === null) {
-        return "now";
+        return t("common.now");
     }
     const options = { year: 'numeric', month: 'long' };
-    return new Date(date).toLocaleDateString(undefined, options);
+    return d(new Date(date), 'custom');
 }
 </script>
 
@@ -58,7 +62,7 @@ function format_date(date) {
     <li :id="`frame_${id}`" class="">
         <span class="date">{{ format_date(start_date) }} - {{ format_date(end_date) }} <span class="degree"></span></span>
         <div>
-            <span class="jobtitle">{{ title }}</span> at
+            <span class="jobtitle">{{ title }}</span> {{ $t("job.at") }}
             <span class="company"><a :href="company_url">{{ company }}</a></span><span v-if="locations.length > 0"
                 class="comma">,</span>
 
@@ -74,34 +78,3 @@ function format_date(date) {
     </li>
 </template>
 
-<style scoped>
-li {
-    list-style-type: none;
-    padding-bottom: 1em;
-    display: flex;
-    flex-direction: column;
-}
-
-span {
-
-    &.date {
-        font-weight: bold;
-        font-size: 15px;
-        color: #818181;
-    }
-
-    &.location {
-        font-size: 0.8em;
-        color: #818181;
-
-        a {
-            color: #515151;
-        }
-    }
-
-    &.comma {
-        padding-right: 0.5em;
-    }
-
-}
-</style>

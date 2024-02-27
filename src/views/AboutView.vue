@@ -24,5 +24,11 @@ const count = ref(0);
   </div>
 </template>
 
-<style>
+<style scoped>
+@media (min-width: 32rem) {
+  .about {
+    min-width: 32rem;
+    margin: 0 auto;
+  }
+}
 </style>

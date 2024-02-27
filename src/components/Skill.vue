@@ -31,24 +31,6 @@ const props = defineProps({
     }
 });
 
-const imported_logos = [
-    IconAnsible, IconVisualbasic, IconC, IconCplusplus, IconSass, IconStylus,
-    IconLinux, IconPython, IconAmazonwebservicesWordmark, IconCoffeescriptWordmark,
-    IconVault, IconNomad, IconConsul, IconTerraform,
-    IconFastapi, IconMysql, IconPostgresql, IconApachekafka, IconHtml5Wordmark,
-    IconGooglecloud, IconApacheairflow, IconKubernetes, IconPhp, IconJava,
-    IconJenkins, IconPerl, IconJavascript, IconGithubactions, IconDjangorest,
-    IconDocker, IconKubernetes
-];
-if (imported_logos == undefined || imported_logos == null) {
-    console.log("imported_logos is undefined or null");
-}
-const logo_name = computed(() => {
-    if (props.logo == undefined || props.logo == null) {
-        return undefined;
-    }
-    return eval("Icon" + props.logo);
-});
 
 const experience_years = computed(() => {
     let totalDiffTime = 0;
@@ -155,24 +137,46 @@ const experience_years = computed(() => {
             <path fill="#FFF"
                 d="M89.624 211.2H49.89l43.945-91.853l19.912 40.992zm7.079-100.63a3.216 3.216 0 0 0-2.887-1.805h-.01a3.204 3.204 0 0 0-2.886 1.82L41.913 213.022a3.203 3.203 0 0 0 2.893 4.58l46.848-.001a3.21 3.21 0 0 0 2.9-1.83l25.65-54.08a3.183 3.183 0 0 0-.016-2.762zM207.985 211.2h-39.477L105.174 78.624a3.206 3.206 0 0 0-2.897-1.824h-25.83l.03-32h50.626l63.042 132.573a3.209 3.209 0 0 0 2.897 1.827h14.943zm3.208-38.4h-16.121L132.03 40.227a3.21 3.21 0 0 0-2.9-1.827H73.273a3.206 3.206 0 0 0-3.208 3.197l-.035 38.4c0 .851.333 1.664.94 2.265c.6.602 1.414.938 2.267.938h27.017l63.337 132.576a3.205 3.205 0 0 0 2.893 1.824h44.709a3.203 3.203 0 0 0 3.207-3.2V176c0-1.766-1.434-3.2-3.207-3.2" />
         </svg>
-        <component :is="logo_name" width="100px" height="100px" v-else-if="logo" />
-        <!-- <img src="https://via.placeholder.com/100" alt="placeholder" v-else /> -->
-        <fa icon="fa-solid fa-ghost" v-else width="100px" height="100px" />
+
+        <IconAnsible v-else-if="name === 'Ansible'" />
+        <IconLinux v-else-if="name === 'Linux'" />
+        <IconPython v-else-if="name === 'Python' || name === 'Asyncio'" />
+        <IconAmazonwebservicesWordmark v-else-if="name === 'AWS'" />
+        <IconVault v-else-if="name === 'Vault'" />
+        <IconNomad v-else-if="name === 'Nomad'" />
+        <IconConsul v-else-if="name === 'Consul'" />
+        <IconTerraform v-else-if="name === 'Terraform'" />
+        <IconFastapi v-else-if="name === 'Fastapi'" />
+        <IconMysql v-else-if="name === 'MySQL'" />
+        <IconPostgresql v-else-if="name === 'Postgresql'" /> <!-- todo? -->
+        <IconApachekafka v-else-if="name === 'Kafka'" />
+        <IconHtml5Wordmark v-else-if="name === 'HTML'" />
+        <IconGooglecloud v-else-if="name === 'GCP'" />
+        <IconApacheairflow v-else-if="name === 'Airflow'" />
+        <IconKubernetes v-else-if="name === 'Kubernetes'" />
+        <IconJenkins v-else-if="name === 'Jenkins'" />
+        <IconJavascript v-else-if="name === 'Java Script'" />
+        <IconGithubactions v-else-if="name === 'Github Actions'" />
+        <IconDjangorest v-else-if="name === 'Django REST Framework'" />
+        <IconDocker v-else-if="name === 'Docker'" />
+        <IconKubernetes v-else-if="name === 'K8s'" />
+
+        <img src="https://via.placeholder.com/100" alt="placeholder" v-else />
         <h3> {{ name }} </h3>
-        <p>{{ level }}</p>
-        <p>{{ experience_years }} years</p>
+        {{ $t("skill.level." + level) }}<br />
+        {{ experience_years }} {{ $t('common.years', { count: experience_years }) }}
 
     </div>
 </template>
 
 <style>
-svg {
-    width: 100px;
-    height: 100px !important;
-}
-
 .skill {
     width: 115px;
     margin-bottom: 1em;
+}
+
+.skill svg {
+    width: 100px;
+    height: 100px !important;
 }
 </style>

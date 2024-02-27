@@ -7,8 +7,18 @@ basics:
     - 40472 Düsseldorf
 experience:
   - company: Zeppelin GmbH
-    description_de: Stream processing in AWS und Migrationen.
-    description_en: Stream processing in AWS and migrations.
+    description_de:
+      Beherrschung von Legacy-Code und modernen Pipelines. Geschickt in der Pflege von
+      Legacy-Code bei gleichzeitiger Überarbeitung von Echtzeit-Datenpipelines mit Kafka
+      und Faust. Entwicklung von REST-APIs für den Datenzugriff und Optimierung der Abläufe
+      durch Migration von Airflow auf Serverless Lambdas. Verantwortlich für eine kritische
+      Gehaltsabrechnungs-Pipeline für 10.000 Mitarbeiter, Gewährleistung von Datenqualität
+      und Sicherheit.
+    description_en:
+      Master of legacy code and modern pipelines, Skilled in maintaining legacy code while
+      revamping real-time data pipelines with Kafka and Faust. Developed REST APIs for data
+      access and optimized operations by migrating Airflow to serverless Lambdas. Held
+      ownership of a critical 10k-employee payroll pipeline, ensuring data quality and security.
     start_date: 2023-01-01
     locations:
       - name: remote
@@ -29,8 +39,16 @@ experience:
     what_de: Senior Data Engineering
     what_en: Senior Data Engineering
   - company: trivago GmbH
-    description_de: Stream processing sowie Cloud Migration in AWS und GCP.
-    description_en: Stream processing, cloud migration in AWS and GCP.
+    description_de:
+      Optimierung von Datenpipelines, Migration einer komplexen Pipeline zu GCP, Steigerung
+      der Effizienz und Skalierbarkeit mit Kubernetes, Kafka und BigQuery. Nachgewiesene
+      Erfolgsbilanz bei der Verwaltung und Verbesserung von Streaming-Pipelines mit verschiedenen
+      Tools wie Lambdas, DynamoDB, Apache Beam und Faust.
+    description_en:
+      Streamlined data pipelines, Migrated a complex pipeline to GCP, achieving increased
+      efficiency and scalability with Kubernetes, Kafka, and BigQuery. Proven track record in
+      managing and enhancing streaming pipelines using diverse tools like Lambdas, DynamoDB,
+      Apache Beam, and Faust.
     start_date: 2019-12-01
     end_date: 2022-12-31
     locations:
@@ -51,15 +69,48 @@ experience:
       - Terraform
       - Faust
       - Apache Beam
-    uid: xtrivago
+    uid: xtrivagode
     url: http://company.trivago.de/
     what_de: Backend Software Engineering
     what_en: Backend Software Engineering
   - company: trivago GmbH
     description_de:
-      Verbesserung des Release Prozesses und Dezimirung der Legacy Bash
-      Release.
-    description_en: Improving the release process and getting rid of legacy bash releases.
+      Orchestrierung des Python-Wissensmanagements, Festlegung von Standards, Ermittlung von
+      Kompetenzlücken und Durchführung von Schulungsaktivitäten wie Workshops, Sprints und
+      Hackathons. Zusammenarbeit mit externen Partnern, um aktuelles Wissen zu gewährleisten
+      und praktisches Lernen zu fördern.
+    description_en:
+      Orchestrated Python knowledge management, establishing standards, identifying skill gaps,
+      and providing training activities like workshops, sprints, and hackathons. Collaborated
+      with external partners to ensure cutting-edge knowledge and foster practical learning.
+    start_date: 2019-02-01
+    end_date: 2022-12-31
+    locations:
+      - name: Düsseldorf
+        osm_link: https://www.openstreetmap.org/way/24659294
+      - name: remote
+    technology:
+      - Python
+      - Pytest
+      - Asyncio
+      - Django
+      - Django REST Framework
+      - Faust
+      - Apache Beam
+    uid: xtrivagokl
+    url: http://company.trivago.de/
+    what_de: Knowledge Lead / Subject Matter Expert
+    what_en: Knowledge Lead / Subject Matter Expert
+  - company: trivago GmbH
+    description_de:
+      Modernisierter Freigabeprozess. Rationalisierung des Arbeitsablaufs durch Ersetzen der
+      alten Bash-Skripte durch ein robustes, vollständig getestetes Python-Tool. Erhebliche
+      Effizienzsteigerungen durch Verkürzung der Bereitstellungszeit von 3 Stunden auf 7 Minuten
+      und Ermöglichung von On-Demand-Bereitstellungen.
+    description_en:
+      Modernized release process. Streamlined workflow by replacing legacy bash scripts with
+      a robust, fully tested Python tool. Achieved significant efficiency gains, reducing
+      deployment time from 3 hours to 7 minutes and enabling on-demand deployments.
     start_date: 2016-07-01
     end_date: 2019-11-30
     locations:
@@ -77,7 +128,7 @@ experience:
       - Bare Metal
       - Django REST Framework
       - Asyncio
-    uid: xtrivago
+    uid: xtrivagore
     url: http://company.trivago.de/
     what_de: Release Engineer
     what_en: Release Engineer
@@ -102,9 +153,18 @@ experience:
     url: https://web.archive.org/web/20190125111431/http://kaasahome.com/home/
     what_de: Programmierer
     what_en: Developer
+    hide_me: true
   - company: Pokermania GmbH
-    description_de: Backend Development der Pokerplattform.
-    description_en: Backend Development of the Poker Platform.
+    description_de:
+      Entwicklung eines asynchronen Backends mit Twisted und Websockets für die
+      Echtzeitkommunikation in einem Multiplayer-Spiel. Beherrscht die MySQL-Datenverwaltung und
+      kann komplizierte Spiellogik debuggen. Er hat einen seltenen Deadlock reproduziert und
+      behoben und dabei seine fortgeschrittenen analytischen Fähigkeiten unter Beweis gestellt.
+    description_en:
+      Engineered async backend with Twisted & Websockets for real-time communication in a
+      multiplayer game. Proficient in MySQL data management and adept at debugging intricate
+      game logic. Notably reproduced and fixed a rare deadlock, showcasing advanced analytical
+      skills.
     start_date: 2012-07-01
     end_date: 2016-02-29
     locations:
@@ -127,9 +187,16 @@ experience:
     url: https://web.archive.org/web/20160606134405/http://www.pokermania.org/
     what_de: Game Developer
     what_en: Game Developer
+    hide_me: true
   - company: Personal Novel
-    description_de: Fullstack Entwicklung
-    description_en: Fullstack Development
+    description_de:
+      Entwicklung eines Full-Stack-Webstores mit Python, Jinja2, SASS und JQuery.
+      Implementierung der Backend-Logik mit SQLAlchemy und MySQL. Generierung und Bearbeitung
+      von dynamischen PDFs mit LaTeX-Vorlagen.
+    description_en:
+      Developed a full-stack webstore using Python, Jinja2, SASS, and JQuery. Implemented
+      backend logic with SQLAlchemy and MySQL. Generated and manipulated dynamic PDFs with
+      templated LaTeX.
     start_date: 2011-04-01
     end_date: 2012-06-30
     locations:
@@ -147,6 +214,7 @@ experience:
     url: http://www.personalnovel.de/
     what_de: Full Stack Developer
     what_en: Full Stack Developer
+    hide_me: true
   - company: Tec de Monterrey
     description_de: Design and Implementation of a Net-Based and General Tagging System
     description_en: Design and Implementation of a Net-Based and General Tagging System
@@ -164,6 +232,7 @@ experience:
     url: http://www.itesm.mx/wps/wcm/connect/campus/mty/monterrey
     what_de: Master Thesis
     what_en: Master Thesis
+    hide_me: true
   - company: Hochschule Ravensburg-Weingarten
     description_de: Betreuung der E-Learning Plattform und Unterstützung der Professoren
     description_en:
@@ -183,6 +252,7 @@ experience:
     url: https://www.hs-weingarten.de/web/rechenzentrum/e-learning
     what_de: Akademischer Mitarbeiter
     what_en: Academic Staff
+    hide_me: true
   - company: Robert BOSCH GmbH
     description_de:
       Konzeption und Implementierung einer Busmirrorapplikation für ein
@@ -205,6 +275,7 @@ experience:
     url: https://www.bosch.de/unser-unternehmen/bosch-in-deutschland/hildesheim/
     what_de: Diplomarbeit
     what_en: Diplom Thesis
+    hide_me: true
   - company: Robert BOSCH GmbH
     description_de:
       Inbetriebnahme eines Nodes und Implementierung der CAN und FlexRay
@@ -226,6 +297,7 @@ experience:
     url: https://www.bosch.de/unser-unternehmen/bosch-in-deutschland/hildesheim/
     what_de: Praxissemester
     what_en: Integrated Semester
+    hide_me: true
 education:
   - company: Hochschule Ravensburg-Weingarten
     degree: Master Informatik
@@ -280,6 +352,7 @@ education:
       - Linux
     what_de: Berufskolleg
     what_en: Berufskolleg
+    hide_me: true
   - company: Ferdinand Porsche Realschule
     degree: Mittlere Reife
     start_date: 1998-09-01
@@ -292,6 +365,7 @@ education:
     technology: []
     what_de: Realschule
     what_en: secondary school (Realschule)
+    hide_me: true
   - company: Hauptschule Ampfing
     start_date: 1995-09-01
     end_date: 1998-08-31
@@ -303,6 +377,7 @@ education:
     technology: []
     what_de: Hauptschule
     what_en: Mondern Secondary School
+    hide_me: true
   - company: Grundschule Finsing/Ampfing
     start_date: 1991-09-01
     end_date: 1995-08-31
@@ -315,6 +390,7 @@ education:
     technology: []
     what_de: Grundschule
     what_en: Primary School
+    hide_me: true
 skills:
   - name: Linux
     periods:
@@ -322,12 +398,10 @@ skills:
     level: expert
     groups:
       - hero
-    logo: Linux
   - name: Linux
     periods:
       - start_date: 2002-09-01
     groups: []
-    logo: Linux
     hide_me: true
   - name: Python
     periods:
@@ -336,7 +410,6 @@ skills:
     groups:
       - language
       - hero
-    logo: Python
   - name: MySQL
     periods:
       - start_date: 2010-01-01
@@ -345,7 +418,6 @@ skills:
       - backend
       - data
       - hero
-    logo: Mysql
   - name: Django
     periods:
       - start_date: 2009-05-01
@@ -358,7 +430,6 @@ skills:
     groups:
       - library
       - backend
-      - hero
   - name: Docker
     periods:
       - start_date: 2016-08-01
@@ -366,7 +437,6 @@ skills:
     groups:
       - ops
       - hero
-    logo: Docker
   - name: Asyncio
     periods:
       - start_date: 2016-07-01
@@ -374,7 +444,6 @@ skills:
     groups:
       - library
       - hero
-    logo: Python
   - name: AWS
     periods:
       - start_date: 2023-01-01
@@ -385,7 +454,6 @@ skills:
       - cloud
       - ops
       - hero
-    logo: AmazonwebservicesWordmark
   - name: GCP
     periods:
       - start_date: 2021-01-01
@@ -394,8 +462,6 @@ skills:
     groups:
       - cloud
       - ops
-      - hero
-    logo: Googlecloud
   - name: Django REST Framework
     periods:
       - start_date: 2016-07-01
@@ -404,7 +470,6 @@ skills:
     groups:
       - library
       - backend
-    logo: Djangorest
   - name: Apache Beam
     periods:
       - start_date: 2019-12-01
@@ -426,7 +491,6 @@ skills:
     level: advanced
     groups:
       - ops
-    logo: Githubactions
   - name: Jenkins
     periods:
       - start_date: 2016-07-01
@@ -434,7 +498,6 @@ skills:
     level: advanced
     groups:
       - ops
-    logo: Jenkins
   - name: HTML
     periods:
       - start_date: 2001-09-01
@@ -442,7 +505,6 @@ skills:
     groups:
       - web_dev
       - language
-    logo: Html5Wordmark
   - name: Websocket
     periods:
       - start_date: 2012-07-01
@@ -459,7 +521,6 @@ skills:
     groups:
       - backend
       - cloud
-    logo: Kubernetes
   - name: Kafka
     periods:
       - start_date: 2019-12-01
@@ -467,7 +528,6 @@ skills:
     level: advanced
     groups:
       - data
-    logo: Apachekafka
   - name: Kinesis
     periods:
       - start_date: 2019-12-01
@@ -489,9 +549,9 @@ skills:
         end_date: 2023-12-31
     level: intermediate
     groups:
+      - hero
       - ops
       - cloud
-    logo: Terraform
   - name: Airflow
     periods:
       - start_date: 2023-06-01
@@ -499,7 +559,6 @@ skills:
     level: intermediate
     groups:
       - data
-    logo: Apacheairflow
   - name: Ansible
     periods:
       - start_date: 2016-07-01
@@ -507,7 +566,6 @@ skills:
     level: intermediate
     groups:
       - ops
-    logo: Ansible
   - name: Bare Metal
     periods:
       - start_date: 2011-04-01
@@ -531,7 +589,6 @@ skills:
     groups:
       - backend
       - library
-    logo: Fastapi
   - name: Consul
     periods:
       - start_date: 2016-07-01
@@ -540,7 +597,6 @@ skills:
     groups:
       - ops
       - cloud
-    logo: Consul
   - name: Nomad
     periods:
       - start_date: 2016-07-01
@@ -549,7 +605,6 @@ skills:
     groups:
       - ops
       - cloud
-    logo: Nomad
   - name: Vault
     periods:
       - start_date: 2016-07-01
@@ -558,7 +613,6 @@ skills:
     groups:
       - ops
       - cloud
-    logo: Vault
   - name: SASS (CSS)
     periods:
       - start_date: 2011-04-01
@@ -566,7 +620,6 @@ skills:
     groups:
       - web_dev
       - language
-    logo: Sass
     hide_me: true
   - name: Stylus (CSS)
     periods:
@@ -575,7 +628,6 @@ skills:
     groups:
       - web_dev
       - language
-    logo: Stylus
     hide_me: true
   - name: Less (CSS)
     periods:
@@ -593,7 +645,6 @@ skills:
     groups:
       - web_dev
       - language
-    logo: CoffeescriptWordmark
     hide_me: true
   - name: Java Script
     periods:
@@ -603,7 +654,6 @@ skills:
     groups:
       - web_dev
       - language
-    logo: Javascript
   - name: Gulp
     level: beginner
     periods:
@@ -612,7 +662,6 @@ skills:
     groups:
       - web_dev
       - language
-    logo: Gulp
     hide_me: true
   - name: Jade
     level: intermediate
@@ -629,7 +678,6 @@ skills:
         end_date: 2001-01-01
     groups:
       - language
-    logo: Visualbasic
     hide_me: true
   - name: Assembler
     periods: []
@@ -644,7 +692,6 @@ skills:
         end_date: 2005-01-01
     groups:
       - language
-    logo: C
     hide_me: true
   - name: C++
     periods:
@@ -652,7 +699,6 @@ skills:
         end_date: 2005-01-01
     groups:
       - language
-    logo: Cplusplus
     hide_me: true
   - name: Java
     periods:
@@ -660,7 +706,6 @@ skills:
         end_date: 2008-10-01
     groups:
       - language
-    logo: Java
     hide_me: true
   - name: PHP
     periods:
@@ -672,13 +717,11 @@ skills:
         end_date: 2006-12-31
     groups:
       - language
-    logo: Php
     hide_me: true
   - name: Perl
     periods: []
     groups:
       - language
-    logo: Perl
     hide_me: true
   - name: CAN
     periods:
@@ -692,3 +735,11 @@ skills:
         end_date: 2008-05-31
     groups: []
     hide_me: true
+presets:
+  abc:
+    email: foo
+    lang: de
+    skills_to_hide: [Linux]
+    skills_to_show: [Kafka]
+    show_all_exp: true
+    show_all_edu: false

@@ -6,7 +6,7 @@
 
   --vt-c-black: #181818;
   --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
+  --vt-c-black-mute: #383838;
 
   --vt-c-indigo: #2c3e50;
 
@@ -28,27 +28,35 @@
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
 
-  --color-border: var(--vt-c-divider-light-2);
+  --color-border: var(--vt-c-black);
   --color-border-hover: var(--vt-c-divider-light-1);
 
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1);
+  --color-link: rgba(0, 102, 204, 1);
+  --color-link-visited: rgba(0, 102, 204, 0.7);
 
   --section-gap: 160px;
+  --element-size: 4rem;
+  --switch-background: var(--vt-c-black);
+  --switch-accent: var(--vt-c-white-soft);
+
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
+:root.dark-theme {
+  --color-background: var(--vt-c-black);
+  --color-background-soft: var(--vt-c-black-soft);
+  --color-background-mute: var(--vt-c-black-mute);
+  --color-heading: var(--vt-c-white);
 
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
+  --color-border: var(--vt-c-white);
+  --color-border-hover: var(--vt-c-divider-dark-1);
 
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
+  --color-heading: var(--vt-c-text-dark-1);
+  --color-text: var(--vt-c-text-dark-2);
+  --switch-background: var(--vt-c-black);
+  --switch-accent: var(--vt-c-black-soft);
 }
 
 *,
@@ -82,6 +90,7 @@ body {
     'Helvetica Neue',
     sans-serif;
   font-size: 15px;
+  font-variant-ligatures: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
