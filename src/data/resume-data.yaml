@@ -40,15 +40,16 @@ experience:
     what_en: Senior Data Engineering
   - company: trivago GmbH
     description_de:
-      Optimierung von Datenpipelines, Migration einer komplexen Pipeline zu GCP, Steigerung
+      Optimierung von Datenpipelines um Qualität, Integrität und Zuverlässigkeit zu
+      gewährleisten. Migration einer komplexen Pipeline zu GCP, Steigerung
       der Effizienz und Skalierbarkeit mit Kubernetes, Kafka und BigQuery. Nachgewiesene
       Erfolgsbilanz bei der Verwaltung und Verbesserung von Streaming-Pipelines mit verschiedenen
       Tools wie Lambdas, DynamoDB, Apache Beam und Faust.
     description_en:
-      Streamlined data pipelines, Migrated a complex pipeline to GCP, achieving increased
-      efficiency and scalability with Kubernetes, Kafka, and BigQuery. Proven track record in
-      managing and enhancing streaming pipelines using diverse tools like Lambdas, DynamoDB,
-      Apache Beam, and Faust.
+      Streamlined data pipelines, ensuring quality, integrity, and reliability. Migrated
+      a complex pipeline to GCP, achieving increased efficiency and scalability with Kubernetes,
+      Kafka, and BigQuery. Proven track record in managing and enhancing streaming pipelines
+      using diverse tools like Lambdas, DynamoDB, Apache Beam, and Faust.
     start_date: 2019-12-01
     end_date: 2022-12-31
     locations:
@@ -97,6 +98,7 @@ experience:
       - Django REST Framework
       - Faust
       - Apache Beam
+      - Kubernetes
     uid: xtrivagokl
     url: http://company.trivago.de/
     what_de: Knowledge Lead / Subject Matter Expert
