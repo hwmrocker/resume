@@ -16,7 +16,6 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/vue-fontawesome": "^3.0.6",
     "@iconify-prerendered/vue-devicon": "^0.23.1704871196",
-    "d3-timeline": "^1.0.1",
     "vue": "^3.4.15",
     "vue-i18n": "9",
     "vue-router": "^4.2.5"

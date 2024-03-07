@@ -1,6 +1,12 @@
 # vue-resume
 
-This template should help get you started developing with Vue 3 in Vite.
+## Presets
+
+1. add a `preset` key to the [resume-data.yaml](./src/data/resume-data.yaml) file.
+2. deploy
+3. visit https://resume.gladis.org/?preset=your-preset-name
+
+# Development
 
 ## Recommended IDE Setup
 
@@ -29,6 +35,3 @@ yarn build
 ```
 
 
-TODO:
-- [ ] allow to change the email via a query parameter
-- [ ] fix css theme / colors
