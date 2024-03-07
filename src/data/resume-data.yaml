@@ -745,3 +745,13 @@ presets:
     skills_to_show: [Kafka]
     show_all_exp: true
     show_all_edu: false
+  P9bGmgQq:
+    email: bewerbung-tonies
+    lang: de
+    skills_to_hide: [Terraform]
+    skills_to_show: [Django, Fastapi]
+  tonies:
+    email: bewerbung-tonies
+    lang: de
+    skills_to_hide: [Terraform]
+    skills_to_show: [Django, Fastapi]
