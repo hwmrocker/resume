@@ -8,17 +8,16 @@ basics:
 experience:
   - company: Zeppelin GmbH
     description_de:
-      Beherrschung von Legacy-Code und modernen Pipelines. Geschickt in der Pflege von
-      Legacy-Code bei gleichzeitiger Überarbeitung von Echtzeit-Datenpipelines mit Kafka
-      und Faust. Entwicklung von REST-APIs für den Datenzugriff und Optimierung der Abläufe
+      Pflege von Legacy-Code bei gleichzeitiger Überarbeitung von Echtzeit-Datenpipelines mit
+      Kafka und Faust. Entwicklung von REST-APIs für den Datenzugriff und Optimierung der Abläufe
       durch Migration von Airflow auf Serverless Lambdas. Verantwortlich für eine kritische
       Gehaltsabrechnungs-Pipeline für 10.000 Mitarbeiter, Gewährleistung von Datenqualität
       und Sicherheit.
     description_en:
-      Master of legacy code and modern pipelines, Skilled in maintaining legacy code while
-      revamping real-time data pipelines with Kafka and Faust. Developed REST APIs for data
-      access and optimized operations by migrating Airflow to serverless Lambdas. Held
-      ownership of a critical 10k-employee payroll pipeline, ensuring data quality and security.
+      Maintaining legacy code while revamping real-time data pipelines with Kafka and Faust.
+      Developed REST APIs for data access and optimized operations by migrating Airflow to
+      serverless Lambdas. Held ownership of a critical 10k-employee payroll pipeline,
+      ensuring data quality and security.
     start_date: 2023-01-01
     locations:
       - name: remote
@@ -135,8 +134,12 @@ experience:
     what_de: Release Engineer
     what_en: Release Engineer
   - company: Kaasa Home Automation GmbH
-    description_de: Entwicklung einer Cordova App für die Hausautomation.
-    description_en: Development of a Cordova App for home automation.
+    description_de:
+      Kurz Projekt. Entwicklung einer Android-App für die Steuerung von Smart-Home-Geräten.
+      Die App wurde in Java Script mit Cordova entwickelt.
+    description_en:
+      Short project. Development of an Android app for controlling smart home devices.
+      The app was developed in Java Script with Cordova.
     start_date: 2016-03-01
     end_date: 2016-06-30
     locations:
@@ -160,8 +163,8 @@ experience:
     description_de:
       Entwicklung eines asynchronen Backends mit Twisted und Websockets für die
       Echtzeitkommunikation in einem Multiplayer-Spiel. Beherrscht die MySQL-Datenverwaltung und
-      kann komplizierte Spiellogik debuggen. Er hat einen seltenen Deadlock reproduziert und
-      behoben und dabei seine fortgeschrittenen analytischen Fähigkeiten unter Beweis gestellt.
+      kann komplizierte Spiellogik debuggen. Habe einen seltenen Deadlock reproduziert und
+      behoben und dabei fortgeschrittenen analytischen Fähigkeiten unter Beweis gestellt.
     description_en:
       Engineered async backend with Twisted & Websockets for real-time communication in a
       multiplayer game. Proficient in MySQL data management and adept at debugging intricate
